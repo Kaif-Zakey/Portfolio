@@ -1,0 +1,47 @@
+:root{
+    --bgcolor:rgba(5, 26, 39, 1);
+}
+
+body{
+    background-color: var(--bgcolor);
+    color: white;
+
+}
+.toptab{
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+    padding: 0px;
+    background-color: var(--bgcolor);
+    display: flex;
+    z-index: 2;
+    margin-bottom: 0px;
+}
+
+#stname{
+
+}
+
+
+
+header nav {
+    position: fixed;
+    right: 7px;
+    top: 40px;
+
+}
+
+header nav a{
+    margin: 3px;
+    color: white;
+    font-weight: bolder;
+    padding: 2px;
+
+}
+
+.intropic{
+    position: relative;
+    left: 75rem;
+    top: 6rem;
+}
