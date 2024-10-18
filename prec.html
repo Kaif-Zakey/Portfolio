@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navigation Bar</title>
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        /* Basic styling for header */
+        .header1 {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+        }
+
+        /* Logo styling */
+        .logo {
+            font-size: 1.5em;
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Navigation menu */
+        .navigation {
+            display: flex;
+            list-style-type: none;
+            gap: 20px;
+        }
+
+        .navigation li {
+            display: inline-block;
+        }
+
+        .navigation a {
+            color: white;
+            text-decoration: none;
+            font-size: 1em;
+        }
+
+        /* Hide menu icon on larger screens */
+        .menu-icon {
+            display: none;
+            cursor: pointer;
+        }
+
+        /* For screens up to 425px (mobile) */
+        @media (max-width: 425px) {
+            /* Show menu icon for small screens */
+            .menu-icon {
+                display: inline-block;
+                font-size: 24px;
+            }
+
+            /* Hide the full navigation menu by default */
+            .navigation {
+                display: none;
+                position: absolute;
+                top: 50px;
+                right: 10px;
+                background-color: #333;
+                flex-direction: column;
+                width: 100%;
+                padding: 10px;
+            }
+
+            /* Show navigation when active (e.g., after clicking menu) */
+            .navigation.active {
+                display: flex;
+            }
+
+            .navigation li {
+                padding: 10px 0;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+<header class="header1">
+    <span class="menu-icon" onclick="toggleMenu()"><i class='bx bx-menu'></i></span>
+    <a href="#" class="logo"> <em>K</em>aif Zaki.</a>
+
+    <nav>
+        <ul class="navigation">
+            <li><a href="#home-nav">Home</a></li>
+            <li><a href="#education-nav">Education</a></li>
+            <li><a href="#About-nav">About</a></li>
+            <li><a href="#project-nav">Projects</a></li>
+            <li><a href="#service-nav">Service</a></li>
+            <li><a href="#skill-nav">Skills</a></li>
+            <li><a href="#gallery-nav">Gallery</a></li>
+            <li><a href="#contact-nav">Contacts</a></li>
+        </ul>
+    </nav>
+</header>
+
+<script>
+    // JavaScript function to toggle the mobile menu
+    function toggleMenu() {
+        const nav = document.querySelector('.navigation');
+        nav.classList.toggle('active');
+    }
+</script>
+</body>
+</html>

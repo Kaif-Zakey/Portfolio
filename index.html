@@ -5,90 +5,106 @@
     <meta name="description" content="this is my portfolio">
     <meta name="keywords" content="developer,portfolio,java,Kaif,zaki">
     <meta name="author" content="Kaif">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/x-icon" href="Assets/logos/profile.png">
-    <link rel="stylesheet" href="CSS/stylesheet.css">
-<!--    <link rel="stylesheet" href="CSS/normalizeCSS.css">-->
+<!--    <link rel="stylesheet" href="CSS/iphone.css">-->
+    <link rel="stylesheet" href="CSS/SmallStylesheet.css">
+    <link rel="stylesheet" href="CSS/Laptop_L.css">
+    <link rel="stylesheet" href="CSS/normalizeCSS.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!--    <link-->
+<!--            rel="stylesheet"-->
+<!--            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"-->
+<!--    />-->
+
+
     <title>Portfolio</title>
 </head>
 <body>
 
 <!--Header-->
-<header class="header">
+<header class="header1">
+    <span class="menu-icon" onclick="toggleMenu()"><i class='bx bx-menu'></i></span>
+    <a href="index.html" class="logo"> <em>K</em>aif Zaki.</a>
 
-    <a href="#" class="logo"> <em>K</em>aif Zaki.</a>
-
-        <nav>
-            <ul class="navigation">
-                <li><a href="">Home</a></li>
-                <li><a href="">Education</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Projects</a></li>
-                <li><a href="">Service</a></li>
-                <li><a href="">Skills</a></li>
-                <li><a href="">Gallery</a></li>
-                <li><a href="">Contacts</a></li>
-            </ul>
-        </nav>
-
-
+    <nav>
+        <ul class="navigation">
+            <li><a href="#home-nav">Home</a></li>
+            <li><a href="#education-nav">Education</a></li>
+            <li><a href="#About-nav">About</a></li>
+            <li><a href="#project-nav">Projects</a></li>
+            <li><a href="#service-nav">Service</a></li>
+            <li><a href="#skill-nav">Skills</a></li>
+            <li><a href="#gallery-nav">Gallery</a></li>
+            <li><a href="#contact-nav">Contacts</a></li>
+        </ul>
+    </nav>
 </header>
+
 
 <!--main Content-->
 <main class="main-content">
 
     <!--Hero or Intro Section-->
-    <section class="Home">
+    <section class="Home" id="home-nav">
         <div class="hContent">
 
-                <h1>Hi I'm Kaif Zaki</h1>
-                <h3>FullStack Developer</h3>
-                <p class="intro msg">
+                <h1 data-aos="zoom-in-right">Hi I'm Kaif Zaki</h1>
+
+            <h3 data-aos="zoom-in-left">FullStack Developer</h3>
+                <p class="intro msg"  >
                     I’m focusing on building efficient, scalable, and  reliable software solutions. I can develop applications that solve real-world problems and enhance user experiences.
                 </p>
 
-                <div class="resumebutton">
+                <div class="resumebutton" data-aos="zoom-in-zoom">
                     <button>Download Resume</button>
                 </div>
 
-                <div class="social-media">
+                <div class="social-media" >
                     <a href=""><i class="fab fa-facebook-f"></i></a>
                     <a href=""><i class="fab fa-twitter"></i></a>
                     <a href=""><i class="fab fa-linkedin"></i></a>
                     <a href=""><i class="fab fa-instagram"></i></a>
                 </div>
 
-                <span class="image"><img src="./Assets/photos/my%20image.png" alt=""></span>
+            <span class="image"><img src="./Assets/photos/my%20image.png" alt=""></span>
+
         </div>
     </section>
 
     <!--about Section-->
-    <section class="About-section">
-        <div class="about-title">
+    <section class="About-section" id="About-nav">
+        <div class="about-title"  data-aos="zoom-in-up">
             <h2 id="About Me"><b>About me</b></h2>
         </div>
 
-       <div class="about-content">
-           <div class="about-para">
-               <p class="sub-title"><b><u>Hii  !</u></b></p>
+       <div class="about-content" data-aos="fade-down">
+           <p class="sub-title"><b><u>Hii  !</u></b></p>
+
+           <div class="about-para" data-aos="zoom-in-right">
                <p>
-                   I am from <em><b>Sri Lanka</b></em> , I love what I do, and I am passionate about helping my clients achieve their goals.
+                   I am from <em><b>Sri Lanka</b></em> , I love what I do, and I am passionate about helping my clients achieve their goals.</p>
                    <br>
-                   I am currently pursuing my undergraduate degree in Software Engineering at <em>IJSE</em>.
+               <p>  I am currently pursuing my undergraduate degree in Software Engineering at <em>IJSE</em><br>
                    <br>
-                   My journey has led me to work on various projects, including developing a robust transaction management system for Bookshop Management System.
+
+                My journey has led me to work on various projects, including developing a robust transaction management system for Bookshop Management System.</p>
                    <br>
-                   Feel free to contact me or follow me on social media to stay updated with my latest work.
+               <p> Feel free to contact me or follow me on social media to stay updated with my latest work.
                </p>
            </div>
+       </div>
 
-           <div class="my-detailabout">
+           <div class="my-detailabout" data-aos="zoom-in-left">
 
-               <p>Name : K.M.M Kaif Zaki</p>
+               <p>Name : K.M.M Kaif Zaki</p> <br>
                <p> Occupation : Full-stack Developer</p>
                <p> Age : 21</p>
                <p>Nationality : Sri Lankan</p>
@@ -96,136 +112,144 @@
                <p>Tel : +94 776737532</p>
 
            </div>
-       </div>
+
 
     </section>
 
     <!--Projects section-->
-    <section class="project-section">
-        <div class="title">
-            <h2 id="Projects"><b>Projects</b></h2>
+    <section class="project-section" id="project-nav">
+        <div class="title"  >
+            <h2   data-aos="zoom-in-up" id="Projects"><b>Projects</b></h2>
         </div>
 
-        <div class="card1">
-            <div>
-                <h4>Java Project</h4>
-            </div>
-            <!--card Body-->
-            <div>
-                    <button>
-                        <a href="https://github.com/Kaif-Zakey/Layered-Architecture.git" id="prf" target="_blank"> <img
-                                src="./Assets/icon/social.png" alt="visit github"> </a>
-                    </button>
+<div class="cards">
+
+    <div class="card1"  data-aos="fade-up-right">
+        <div>
+            <h4>Java Project</h4>
+        </div>
+        <!--card Body-->
+        <div>
+            <button>
+                <a href="https://github.com/Kaif-Zakey/Layered-Architecture.git" id="prf" target="_blank">
+                    <i class="fab fa-github">
+                    </i>
                 </a>
-            </div>
+            </button>
         </div>
+    </div>
 
-        <div class="card2">
-            <div>
-                <h4>Connect 4 Game <br> (OOP)</h4>
-            </div>
+    <div class="card2"  data-aos="fade-up-center">
+        <div>
+            <h4>Connect 4 Game<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(OOP)</h4>
+        </div>
+        <!--Card2 body-->
+        <div>
 
-            <!--Card2 body-->
-            <div>
+            <button>
                 <a href="https://github.com/Kaif-Zakey/Bookshop-Management-System.git" target="_blank">
-                    <button>
-                        <img src="Assets/logos/Github.png" alt="click to view" height="40px">
-                    </button>
+                    <i class="fab fa-github"  ></i>
                 </a>
-            </div>
+            </button>
         </div>
+    </div>
 
-        <div class="card3">
-            <div>
-                <h4>HTML,CSS<br>(Website)</h4>
-            </div>
-            <!--Card3 body-->
-            <div>
-                <a href="https://github.com/Kaif-Zakey/Bookshop-Management-System.git" target="_blank">
-                    <button>
-                        <img src="Assets/logos/Github.png" alt="click to view" height="40px">
-                    </button>
-                </a>
-            </div>
+    <div class="card3"  data-aos="fade-up-left">
+        <div>
+            <h4>HTML,CSS<br>(Website)</h4>
         </div>
+        <!--Card3 body-->
+        <div>
+            <button>
+                <a href="https://github.com/Kaif-Zakey/Bookshop-Management-System.git" target="_blank">
+                    <i class="fab fa-github" ></i>
+                </a>
+            </button>
+        </div>
+    </div>
+
+
+</div>
+
+        <a href="Assignment.html" data-aos="zoom-out-up" class="morebtn">More <span><i class='bx bx-chevrons-right'></i></span></a>
 
     </section>
 
     <!--skills section-->
-    <section class="skills-section">
+    <section class="skills-section" id="skill-nav">
         <div class="title">
-            <h2  id="Skills"><b>Skills</b></h2>
+            <h2  id="Skills"  data-aos="zoom-in-up"><b>Skills</b></h2>
         </div>
 
-        <div class="first-set">
-            <ul type="square">
+        <div class="skill-set">
+            <ul class="square" data-aos="zoom-out-up">
                 <li>
                     My problem-solving abilities and analytical mindset allow me to tackle complex issues
                     head-on and devise innovative solutions tailored to specific needs
                 </li>
                 <br>
                 <li>
-                    I am well-versed in Agile and Scrum methodologies, <br>which enable me to manage projects
+                    I am well-versed in Agile and Scrum methodologies,which enable me to manage projects
                     effectively and deliver high-quality software within tight deadlines.
                 </li>
                 <br>
                 <li>
 
                     I have extensive experience in designing and managing databases
-                    <br>such as MySQL, PostgreSQL, and MongoDB, ensuring optimal performance and data integrity
+                    such as MySQL, PostgreSQL, and MongoDB, ensuring optimal performance and data integrity
                 </li>
             </ul>
         </div>
 
 
-        <section class="skillSub-content">
+        <section class="skillSub-content1">
             <div class="sub-title">
-                <h3 style="color: blue"><u>Languages,Frameworks And Tools.</u></h3>
+                <h3 data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine" ><u>Languages,Frameworks And Tools.</u></h3>
             </div>
 
             <div class="skillSub-content">
                 <div>
-                    <img src="Assets/tools/figma.png" alt="figma" height="40px">
+                    <img data-aos="fade-right" src="Assets/icon/figma.png" alt="figma" height="40px">
                     <h5>Figma</h5>
                 </div>
                 <div>
-                    <img src="Assets/tools/html.png" alt="html" height="40px">
+                    <img data-aos="fade-right" src="Assets/icon/html.png" alt="html" height="40px">
                     <h5>HTML</h5>
                 </div>
                 <div>
-                    <img src="Assets/tools/java.jpg" alt="java" height="40px">
+                    <img data-aos="fade-left" src="Assets/icon/java.png" alt="java" height="40px">
                     <h5>Java</h5>
                 </div>
                 <div>
-                    <img src="Assets/tools/CSS.png" alt="css" height="40px">
+                    <img  data-aos="fade-right" src="Assets/icon/social%20(1).png" alt="css" height="40px">
                     <h5>CSS</h5>
                 </div>
                 <div>
-                    <img src="Assets/tools/git.jpg" alt="git" height="40px">
+                    <img data-aos="fade-left" src="Assets/icon/git.png" alt="git" height="40px">
                     <h5>git</h5>
                 </div>
                 <div>
-                    <img src="https://i.pngimg.me/thumb/f/720/5855662718320640.jpg" alt="MySQL" height="40px">
+                    <img data-aos="fade-right" src="./Assets/icon/programing.png" alt="MySQL" height="40px">
                     <h5>MySQL</h5>
                 </div>
+
                 <div>
-                    <img src="https://w7.pngwing.com/pngs/79/518/png-transparent-js-react-js-logo-react-react-native-logos-icon-thumbnail.png" alt="React" height="40px">
+                    <img data-aos="fade-left" src="./Assets/icon/atom.png" alt="React" height="40px">
                     <h5>React</h5>
                 </div>
+
                 <div>
-                    <img src="https://p7.hiclipart.com/preview/520/669/92/c-programming-language-computer-icons-computer-programming-programming.jpg" alt="C#" height="40px">
-                    <h5>C#</h5>
-                </div>
-                <div>
-                    <img src="https://p7.hiclipart.com/preview/708/80/50/5bbc11749bc4b.jpg" alt="MongoDb" height="40px">
+                    <img data-aos="fade-right" src="./Assets/icon/server.png" alt="MongoDb" height="40px">
                     <h5>MongoDb</h5>
                 </div>
                 <div>
-                    <img src="https://cdn.freebiesupply.com/logos/large/2x/nodejs-1-logo-png-transparent.png" alt="Node.js" height="40px">
+                    <img data-aos="fade-left" src="./Assets/icon/nodejs.png" alt="Node.js" height="40px">
                     <h5>Node.JS</h5>
                 </div>
                 <div>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt_sEn24GdlhKqI6zd0n6X4lbfVJlhN8l92w&s" alt="javaScript" height="40px">
+                    <img data-aos="fade-right" src="./Assets/icon/js.png" alt="javaScript" height="40px">
                     <h5>JavaScript</h5>
                 </div>
 
@@ -234,75 +258,83 @@
     </section>
 
     <!--Education section-->
-    <section class="education-section">
+    <section class="education-section" id="education-nav">
         <!--title Education-->
-        <div>
-            <h2><b>Education</b></h2>
+        <div class="education-title">
+            <h2  data-aos="zoom-in-up"><b>Education</b></h2>
         </div>
-
-        <div class="education-content">
-
-            <div>
-                <img src="Assets/arafath2.jpeg" alt="School" id="arafath">
-                <p>Did My Ordinary Level in 2019 <br>
-                    at Arafath Maha Vidyalaya </p>
+        <div class="timeline">
+            <div class="timeline-item" data-aos="fade-down">
+                <div class="timeline-year">2019</div>
+                <div class="timeline-content">
+                    <h3>Ordinary Level</h3>
+                    <p>Did O/L in Arafath Muslim Maha Vidiyalaya.</p>
+                </div>
             </div>
-            <div>
-                <img src="https://pbs.twimg.com/profile_images/702360054331273221/pROdbOmQ_400x400.jpg" alt="Al-Fahriya" height="70px">
-                <p>Did My Advance Level in 2023 <br>
-                    at Al-Fahriya central college </p>
+
+            <div class="timeline-item" data-aos="fade-up">
+                <div class="timeline-year">2022</div>
+                <div class="timeline-content">
+                    <h3>Advanced Level</h3>
+                    <p>Did A/L in Al-Fahriya National Collage.</p>
+                </div>
             </div>
-            <div>
-                <img src="https://www.ijse.lk/images/logos/ijse.png" alt="IJSE" height="50px">
-                <p>I am Currently pursuing <br> a BSC(Hons) in <br> Computer Science at IJSE</p>
+
+            <div class="timeline-item" data-aos="fade-up">
+                <div class="timeline-year">2023</div>
+                <div class="timeline-content">
+                    <h3>Graduate Diploma in Software Engineer(GDSE)</h3>
+                    <p> Purchasing  Diploma in IJSE</p>
+                </div>
             </div>
         </div>
     </section>
 
     <!--Service section-->
-    <section class="service-section">
+    <section class="service-section" id="service-nav">
 
-        <div>
-            <h2><b>Service</b></h2>
+        <div class="service-title">
+            <h2  data-aos="zoom-in-up"><b>Service</b></h2>
         </div>
 
         <div class="cards-services">
 
-            <div class="card-1">
-                <div>
+            <div class="card-1" data-aos="zoom-in">
+                <img src="./Assets/icon/code%20(1).png" alt="web" style="width: 60px">
+                <div class="webDevelopment-title">
                     <h4>Web Development</h4>
                 </div>
 
                 <div>
-                    <p>I develop robust e-commerce platforms with secure payment <br>
+                    <p>I develop robust e-commerce platforms with secure payment
                         gateways and user-friendly interfaces to drive your online sales</p>
                 </div>
             </div>
 
-            <div class="card-2">
-                <div>
+            <div class="card-2" data-aos="zoom-in">
+                <img src="./Assets/icon/application%20(1).png" style="width: 60px " alt="App">
+                <div class="App-development">
                     <h4>App Development</h4>
                 </div>
 
                 <div>
                     <p>
-                        I can optimize your app’s performance to ensure <br>
-                        fast load times, smooth transitions, and minimal crashes, providing a seamless user experience
+                        I can optimize your app’s performance to ensure fast load times, smooth transitions, and minimal crashes, providing a seamless user experience
                     </p>
                 </div>
             </div>
 
-            <div class="card-3">
+            <div class="card-3" data-aos="zoom-in">
+                <img src="./Assets/icon/ux-design%20(1).png" style="width: 60px" alt="">
                 <div>
-                    <h4>
+                    <h4 class="title">
                         UI/UX
                     </h4>
                 </div>
 
                 <div>
                     <p>
-                        I can Design visually appealing interfaces that reflect your brand identity <br>
-                        and engage users, using the latest design trends
+                        I can Design visually appealing interfaces that reflect your brand identity and engage users, using the latest design trends
                     </p>
                 </div>
             </div>
@@ -310,31 +342,30 @@
     </section>
 
     <!--Gallery section-->
-    <section class="Gallery-section">
+    <section class="Gallery-section" id="gallery-nav">
         <div class="Gallery-title">
-            <h2> <b>Gallery</b></h2>
+            <h2  data-aos="zoom-in-up"> <b>Gallery</b></h2>
         </div>
 
-        <div>
-            <picture >
-                <img src="Assets/photos/my1.jpeg" alt="my photo" height="200px">
-                <img src="Assets/photos/WhatsApp%20Image%202024-02-04%20at%2015.42.09.jpeg" height="200px" alt="my photo">
-                <img src="Assets/photos/my3.jpeg" alt="my photo" height="200px">
-            </picture>
+        <div class="photos">
+                <img data-aos="zoom-out"  src="Assets/photos/my1.jpeg" alt="my photo" >
+                <img data-aos="zoom-out" src="Assets/photos/WhatsApp%20Image%202024-02-04%20at%2015.42.09.jpeg"  alt="my photo">
+                 <img data-aos="zoom-out" src="Assets/photos/my31.jpeg" alt="my photo" class="lastphoto1" >
+                 <img data-aos="zoom-out" src="Assets/photos/my5.jpeg" alt="my photo"  >
         </div>
     </section>
 
     <!--Contact Section-->
-    <section class="contacts-section">
+    <section class="contacts-section" id="contact-nav">
         <div class="contact-title">
-            <h2><b>
+            <h2  data-aos="zoom-in-up"><b>
                 Contact Me
             </b></h2>
         </div>
 
         <div class="contact-content">
             <div class="contact-links">
-                <div>
+                <div id="MailLink">
                     <a href="mailto:kaifzakey22@gmail.com">
                         <img src="Assets/icon/mail.png" alt="click to mail" title="Click to mail" height="30px"> <p>kaifzakey22@gmail.com</p>
                     </a>
@@ -348,9 +379,10 @@
 
             </div>
 
-            <div>
+
+            <div class="ContactForm">
                 <form>
-                    <input type="text" placeholder="YourName" id="yourName" required>
+                    <input  type="text" placeholder="YourName" id="yourName" required >
                     <br>
                     <input type="email" placeholder="Your Mail" required>
                     <br>
@@ -368,19 +400,19 @@
 <!--footer-->
 <footer>
     <div class="footer-socialLinks">
-        <a href="https://www.facebook.com/kaif.zakey.18?mibextid=LQQJ4d">
+        <a href="https://www.facebook.com/kaif.zakey.18?mibextid=LQQJ4d" target="_blank">
           <i class="fab fa-facebook"></i>
         </a>
 
-        <a href="https://x.com/zakeykaif34299?s=21">
+        <a href="https://x.com/zakeykaif34299?s=21" target="_blank">
             <i class="fab fa-twitter"></i>
         </a>
 
-        <a href="">
+        <a href="https://github.com/Kaif-Zakey" target ="_blank">
             <i class="fab fa-github"></i>
         </a>
 
-        <a href="">
+        <a href="" target="_blank">
             <i class="fab fa-linkedin-in"></i>
         </a>
 
@@ -388,16 +420,29 @@
             <i class="fab fa-instagram"></i>
         </a>
     </div>
-
-    <div>
+    <div class="pfooter">
         <p>
-            Thank you for taking the time to view my portfolio. <br>
-            I look forward to connecting with you  to <br>
+            Thank you for taking the time to view my portfolio.
+            I look forward to connecting with you  to
             exploring how we can collaborate to create amazing digital experiences .
         </p>
     </div>
+    <div class="copyrights">
+        <p>©Kaif Zaki. All rights reserved.</p>
+    </div>
 </footer>
 
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+
+
+        // JavaScript function to toggle the mobile menu
+        function toggleMenu() {
+        const nav = document.querySelector('.navigation');
+        nav.classList.toggle('active');
+    }
+</script>
 
 </body>
 </html>
