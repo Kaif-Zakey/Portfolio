@@ -15,8 +15,6 @@ body{
     font-family: "Poppins", sans-serif;
     font-style: normal;
     overflow-x: hidden;
-
-
 }
 
 header nav ul li{
@@ -27,6 +25,7 @@ header nav ul li{
 
 header {
     width: 100%;
+    min-width: auto;
     position: fixed;
     top: 0;
     left: 0;
@@ -115,6 +114,7 @@ header {
     width: 16ch;
     animation: typing 3s steps(16), blink 0.75s step-end infinite;
 }
+
 @keyframes typing {
     from {
         width: 0;
@@ -212,12 +212,7 @@ header {
     opacity: 0.8;
 }
 
-/*.resumebutton button::after{
-    content: "";
-    background-color: #387bc9;
-    box-shadow:0 0 5em #387bc9;
-    z-index: -1;
-}*/
+
 .social-media{
     position: absolute;
     bottom: 40px;
@@ -286,14 +281,6 @@ header {
 
 
 
-/*.bar2{*/
-/*    position: absolute;*/
-/*    left: 850px;*/
-/*    bottom: 10px;*/
-/*    height: 90vh;*/
-/*    width: 100px;*/
-/*    background:#021925 ;*/
-/*}*/
 
 
 
@@ -441,11 +428,6 @@ header {
     font-size: 60px;
     color: #387bc9;
 }
-/*@media screen and (max-width:1245px ) {*/
-/*    .service-section {*/
-/*     color: #56eaef;*/
-/*    }*/
-/*}*/
 
 .project-section .morebtn{
     position: relative;
@@ -470,11 +452,6 @@ header {
     transition: 0.5s;
     overflow: hidden;
 }
-/*@media screen and (max-width: 1245px) {*/
-/*    .project-section .morebtn {*/
-/*        left: 80%;*/
-/*    }*/
-/*}*/
 
 .project-section .morebtn:hover{
     padding-left:0 ;
@@ -568,8 +545,6 @@ header {
     width: 100%;
     flex-wrap: wrap;
     margin-bottom: 200px;
-
-
 }
 
 .skillSub-content div{
@@ -739,7 +714,6 @@ header {
 }
 .card-1 img{
     position: relative;
-    /*left: 110px;*/
     top: 10px;
 }
 .card-1 .webDevelopment-title{
@@ -800,17 +774,6 @@ header {
 }
 
 
-/*@media screen and (max-width: 1245px){*/
-/*    .cards-services {*/
-/*        padding-left: 0;*/
-/*    }*/
-/*    .cards-services .card-2 {*/
-/*        margin-left: 4%;*/
-/*    }*/
-/*    .cards-services .card-3 {*/
-/*        margin-left: 4%;*/
-/*    }*/
-/*}*/
 .card-3 img{
     position: relative;
     /*left: 110px;*/
@@ -873,15 +836,6 @@ header {
     height: 400px;
 }
 
-/*@media screen and (max-width: 1245px){*/
-/*    .Gallery-section .photos img{*/
-/*        width: 250px;*/
-/*    }*/
-
-/*    .lastphoto1{*/
-/*        height: 330px;*/
-/*    }*/
-/*}*/
 
 .contacts-section{
     top: 200px;
@@ -949,19 +903,6 @@ form input{
 
 }
 
-/*@media(max-width: 1500px){*/
-/*    form input{*/
-/*        width: 400px;*/
-/*    }*/
-
-/*    form textarea{*/
-
-/*        max-width: 400px;*/
-/*    }*/
-/*    form{*/
-/*        margin-right: 50px;*/
-/*    }*/
-/*}*/
 
 input::placeholder {
     color: #bbb;
@@ -1006,16 +947,7 @@ form textarea{
     opacity: 1;
 
 }
-/*@media screen and (max-width: 1245px){*/
-/*    .ContactForm {*/
-/*        left: 50%;*/
-/*    }*/
-/*    .ContactForm button {*/
-/*        position: absolute;*/
-/*        top: 60%;*/
-/*        right: 200%;*/
-/*    }*/
-/*}*/
+
 
 footer{
     margin-top: 400px;
@@ -1107,9 +1039,5 @@ footer .copyrights p{
     color:#081b29 ;
 
 }
-
-
-
-
 
 

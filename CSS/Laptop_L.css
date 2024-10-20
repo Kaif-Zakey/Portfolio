@@ -1,25 +1,45 @@
 
-@media screen and (max-width: 1441px){
+@media screen and (max-width: 1445px){
 
     header {
-        padding: 10px 2% 10px 10%;
+        padding: 10px 5% 10px 8%;
     }
+
+
     .logo{
         font-size: 30px;
     }
     .navigation a{
-        font-size: 21px;
+        font-size: 20px;
     }
     .navigation a:hover{
         font-size: 24px;
     }
+
+
     .Home{
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom:0;
+        position: relative;
+        height: auto;
+        width: auto;
+        max-width: 1440px;
+        margin: auto;
         padding: 10px 5% 10px 8%;
-        margin-bottom: 30px;
+    }
+    .hContent{
+        margin: auto;
+        position: relative;
+       width: auto;
+        max-width:100% ;
     }
     .hContent h1{
+        margin:200px auto auto 1px;
+        width: auto;
+        max-width: 16ch;
         font-size: 65px;
-        font-weight: 600;
     }
     .hContent h3{
         font-size: 40px;
@@ -28,21 +48,26 @@
 
     }
     .hContent p{
+        margin:30px 0 30px 0;
         font-size: 20px;
-        width: 55%;
+        max-width: 55%;
+        width: auto;
     }
     .resumebutton{
-        top: 40px;
+        top: 0;
+        width: auto;
+        margin:1px auto auto   auto;
         height: fit-content;
-        width: fit-content;
+        max-width: 100%;
     }
 
     .resumebutton button{
         font-size: 20px;
+        margin: auto auto 150px auto;
     }
 
     .social-media{
-        bottom: 50px;
+        bottom: 0;
         width: fit-content;
     }
 
@@ -55,21 +80,38 @@
     }
 
     .hContent .image {
+        display: flex;
+        justify-items: end;
+        justify-content: end;
+        position: absolute;
         overflow-x: unset;
-        left: 58%;
+        left: 0;
+        top: 0;
         right: 0;
-        width: 600px;
-        height: 80vh;
+        bottom: 0;
+        margin: 2px 2px auto auto;
+        width: 500px;
+        height: auto;
+        outline: 40px solid #021925;
+        outline-offset: -30px;
+
     }
 
     .About-section{
-        margin-top: 200px;
+        /*border: 2px solid greenyellow;*/
+        height: auto;
+        margin:  auto;
         padding: 10px 5% 10px 8%;
+        width: auto;
+        max-width: 100%;
+
     }
 
     .about-title{
+        margin: 100px auto 50px 1px;
         font-size: 55px;
-        font-weight: 300;
+        width: auto;
+        max-width: 100%;
     }
 
     .sub-title{
@@ -80,32 +122,55 @@
     .about-para{
         font-size: 20px;
         top: 50px;
-        width: 60vw;
+        max-width: 60vw;
+        width: auto;
+        height: auto;
     }
+
 
     .my-detailabout{
         font-size: 20px;
         font-weight: bolder;
+        margin:150px auto 10px 2px;
+        height: auto;
+        top: 0;
     }
 
+
+    .my-detailabout p{
+        margin-bottom: 30px;
+        margin-right:auto ;
+        margin-left:auto;
+        width: 40vw;
+    }
+
+
     .project-section{
-        margin-top: 200px;
+        margin: auto;
+        height: auto;
+        width: auto;
+        max-width: 100%;
         padding: 10px 5% 10px 8%;
     }
 
     .project-section .title{
         font-size: 55px;
         font-weight: 300;
+        margin: 100px auto 20px 1px;
     }
 
     .project-section .cards {
-        top: 5vh;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin:40px auto auto auto;
+        top: 0;
     }
 
-        .project-section .card1{
-        height: 300px;
-        border-width:6px 1px 6px 1px;
-        width: 200px;
+    .project-section .card1{
+      height: 300px;
+      border-width:6px 1px 6px 1px;
+      width: 200px;
     }
     .project-section .card2{
         height: 300px;
@@ -120,29 +185,57 @@
     }
 
     .project-section .morebtn{
-        top: 120px;
-        left: 80%;
+        position: relative;
+        margin:100px 10px 50px auto;
+        top: 0;
+        left: 0;
     }
 
     .skills-section{
+        height: auto;
+        width: auto;
+        /*border: 4px solid yellow;*/
         padding: 10px 5% 10px 8%;
-        margin-bottom: 0;
-
+        margin: auto;
 
     }
+
+    .skills-section .title{
+        max-width: 100%;
+        width: auto;
+        margin:100px auto 50px 1px;
+
+    }
+
+    .skillSub-content1{
+        position: relative;
+        margin-top: 50px;
+        margin-bottom: auto;
+        text-align: center;
+        top: 0;
+    }
+
+    .skillSub-content{
+        margin-bottom: auto;
+    }
+
+
     .skills-section #Skills{
         font-size: 55px;
         font-weight: 700;
     }
     .skill-set{
+        width: auto;
+        max-width: 100%;
         font-size: 20px;
     }
 
     .education-section{
-        top: 100px;
+        /*border: 4px solid #c679f3;*/
+        top: 0;
+        bottom: 0;
         padding: 10px 5% 10px 8%;
-        margin-top: 100px;
-        margin-bottom: 10px;
+      margin: auto;
 
     }
     .education-title{
@@ -150,11 +243,28 @@
         font-weight: 300;
     }
     .service-section{
-        top: 170px;
+        top: 0;
+        bottom: 0;
+        height: auto;
+        width: auto;
+        /*border: 4px solid #90f6d2;*/
         padding: 10px 5% 10px 8%;
-        margin-bottom: 100px;
+        margin: auto;
+
     }
 
+    .cards-services{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 0;
+        padding: 0;
+        margin: 40px  auto auto 2px ;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
 
     .service-title{
         font-size: 55px;
@@ -162,13 +272,26 @@
     }
 
     .Gallery-section{
+
+        /*border: 4px solid #f3c679;*/
         padding: 10px 5% 10px 8%;
-        height: fit-content;
+        height: auto;
+        width: auto;
+        max-width: 100%;
+        top: 0;
+        bottom: 0;
+        margin:auto;
     }
 
 
     .Gallery-section .photos {
-       left: 6%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 0;
+        margin-top: 40px;
+        padding: 0;
+        left: 0;
     }
 
     .Gallery-section .Gallery-title{
@@ -183,172 +306,96 @@
     }
 
     .contacts-section{
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        /*border: 4px solid red;*/
         padding: 10px 5% 10px 8%;
-        width: fit-content;
+        width: auto;
+        margin: auto;
+        height: auto;
     }
+
+    .contact-content{
+        display: flex;
+        flex-wrap: wrap;
+        top: 0;
+        position: relative;
+    }
+
     .contacts-section .contact-title{
         font-size: 55px;
         font-weight: 300;
+        width: auto;
+        max-width: 100%;
     }
     .ContactForm{
-        top: -100px;
-        left: 800px;
-        margin-bottom: 1px;
+        top: 0;
+        left: auto;
+        width: auto;
+        max-width: 100%;
+        margin:100px 10px auto auto;
     }
 
+    .ContactForm button{
+        margin:auto auto 40px 30% ;
+        bottom: 0;
+        right: 0;
+        font-size:30px;
+        font-weight:50;
+    }
+
+
     footer{
+        padding: 10px 5% 10px 8%;
+
+        max-width: 100%;
         text-align: center;
-        margin-top: 200px;
-        height: 30vh;
-        width:100%;
+        margin: auto;
+        max-height: 60vh;
+        width: auto;
         right: 1px;
         left: 1px;
-        bottom: 1px;
-        border: 2px solid #6f0c72;
+        bottom: auto;
+        /*border: 2px solid #6f0c72;*/
+    }
+
+    footer .footer-socialLinks{
+        position: relative;
+        bottom: 30px;
+        margin: auto;
     }
 
     footer .copyrights p{
-        top: 100px;
+        margin: 20px auto auto auto;
+        top: 0;
+    }
+    footer p{
+       width: 80%;
+        margin: auto;
+        top: 0;
+        bottom: 0   ;
+    }
+
+    .footer-socialLinks{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly ;
+        margin: auto ;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+    }
+
+    .pfooter{
+        display: flex;
+        bottom: 0;
     }
 
 
 
-    /*.Home{*/
-    /*    padding: 0 5% 0 ;*/
-    /*}*/
-
-    /*.hContent h1{*/
-    /*    font-size: 35px;*/
-    /*    font-weight: 700;*/
-    /*}*/
-
-    /*.hContent p{*/
-    /*    font-size: 13px;*/
-    /*    width: 39%;*/
-    /*}*/
-    /*.hContent h3{*/
-    /*    font-size: 18px;*/
-    /*    font-weight: 600;*/
-    /*}*/
-
-    /*.resumebutton{*/
-    /*    height: fit-content;*/
-    /*    width: fit-content;*/
-    /*    top: 18px;*/
-
-    /*}*/
-
-    /*.resumebutton button {*/
-    /*    font-size: 12px;*/
-    /*    bottom: 15px;*/
-    /*}*/
-    /*.social-media{*/
-    /*    top: 75%;*/
-    /*    width: fit-content;*/
-    /*}*/
-    /*.hContent .image {*/
-    /*    position: absolute;*/
-    /*    top: 50px;*/
-    /*    left:50%;*/
-    /*    width: 500px;*/
-    /*    height: fit-content;*/
-    /*}*/
-
-    /*.About-section{*/
-    /*    top: 60px;*/
-    /*    padding: 0 5% 0 ;*/
-    /*}*/
-
-    /*.project-section{*/
-    /*    margin-top: 200px;*/
-    /*    padding: 0 5% 0 ;*/
-    /*    width: fit-content;*/
-    /*}*/
-
-    /*.project-section .cards {*/
-    /*    width: fit-content;*/
-    /*    margin-left: 20%;*/
-    /*}*/
-    /*.project-section .morebtn{*/
-    /*    top: 200px;*/
-    /*    left: 850px;*/
-    /*}*/
-
-    /*.skills-section{*/
-    /*    height: 150vh;*/
-    /*    padding: 0 5% 0 ;*/
-    /*    margin-bottom: 0;*/
-    /*}*/
-
-    /*.skillSub-content{*/
-    /*    margin-bottom: 0;*/
-    /*}*/
-    /*.education-section{*/
-    /*    top: 100px;*/
-    /*    margin-top:0;*/
-    /*    padding: 0 5% 0 ;*/
-    /*    width: fit-content;*/
-    /*    margin-bottom: 0;*/
-    /*}*/
-
-    /*.service-section{*/
-    /*    top: 100px;*/
-    /*    padding: 0 5% 0 ;*/
-    /*    width: fit-content;*/
-    /*    margin-bottom: 10px;*/
-    /*}*/
-
-    /*.cards-services{*/
-    /*    padding-left: 0%;*/
-    /*    top: 50px;*/
-    /*}*/
-    /*.Gallery-section{*/
-    /*    top: 10px;*/
-    /*    padding: 0 5% 0 ;*/
-    /*    margin-bottom: 10px;*/
-    /*    letter-spacing: 0;*/
-    /*}*/
-
-
-    /*.Gallery-section .photos {*/
-    /*    top: 10px;*/
-    /*    margin-bottom: 10px;*/
-    /*    justify-content: normal;*/
-    /*    align-content: normal;*/
-    /*    width: fit-content;*/
-
-    /*}*/
-
-    /*.Gallery-section .photos img{*/
-    /*    width: 250px;*/
-    /*}*/
-
-    /*.lastphoto1{*/
-    /*    height: 340px;*/
-    /*}*/
-
-    /*.contacts-section{*/
-    /*    top: 0;*/
-    /*    padding: 0 5% 0 ;*/
-    /*    width: fit-content;*/
-    /*}*/
-
-    /*.contact-content{*/
-    /*    top: 100px;*/
-    /*}*/
-
-    /*.ContactForm{*/
-    /*    position: absolute;*/
-    /*    top: 100px;*/
-    /*    left: 650px;*/
-    /*    bottom:0;*/
-    /*}*/
-    /*.ContactForm button{*/
-    /*    bottom: 150px;*/
-    /*    right: 650px;*/
-    /*    font-size:30px;*/
-    /*    font-weight:600;*/
-    /*}*/
 
 
 }
@@ -357,294 +404,168 @@
 @media screen and (max-width: 1024px){
 
 
+
     .navigation a{
         font-size: 16px;
-        text-decoration: none;
-        font-weight: 400;
-        margin-left:10px ;
     }
 
     .logo{
-        font-size: 20px;
+        font-size: 18px;
         font-weight: 600;
     }
-    header {
-        width: 100%;
-        padding: 15px 5% 15px 5%;
-    }
+
+header{
+    padding: 10px 2% 10px 5%;
+
+}
 
     .Home{
-        position: relative;
-        top: 40px;
-        height: 100vh;
-        padding: 0 5% 0 5%;
+        padding: 10px 2% 10px 5%;
     }
 
     .hContent h1{
-        position: relative;
-        bottom: 50px;
-        overflow: hidden;
-        font-size: 45px;
-        padding: 0;
-        width: fit-content;
-        z-index: 2;
+        font-size: 40px;
     }
 
 
     .hContent h3{
-        position: relative;
-        bottom: 55px;
-        font-size: 18px;
-        padding-bottom: 20px;
-        margin-top: 0;
-        font-weight: 700;
-        z-index: 1;
+        font-size: 25px;
     }
 
     .hContent p{
-        position: relative;
-        bottom: 70px;
-        font-size: 12px;
-        z-index: 3;
-        margin:10px 0 10px 0;
-        letter-spacing: .3px;
-        width: 45%;
+        font-size: 15px;
+        max-width:50%;
+        width: auto;
     }
 
     .hContent .image {
-        position: absolute;
-        top: 20px;
-        left: 51%;
-        width: 500px;
-        z-index: 0;
-        height: 95vh;
-
+        width: 420px;
+        height: 80vh;
     }
 
-    .resumebutton{
-        position: relative;
-        top: 0;
-        height: fit-content;
-        width: fit-content;
-    }
+
 
     .resumebutton button{
-        letter-spacing: 1px;
-        border-radius: 30px;
-        padding: 10px 10px;
         font-size: 12px;
         font-weight: 500;
-        bottom: 50px;
+        margin: auto auto 50px auto;
     }
 
-    .social-media{
-        bottom: 120px;
-        width: fit-content;
-    }
 
-    .social-media i{
-        font-size: 20px;
-        top: 5px;
-        right: 7px;
-    }
-    .social-media a{
-        width:35px ;
-        height: 35px;
-        margin-right: 15px;
-    }
+
+        .social-media a{
+            width:35px ;
+            height: 35px;
+        }
+        .social-media i{
+            left: 8px;
+            top:  8px;
+            font-size: 20px;
+        }
+
+        .social-media{
+            position: relative;
+          margin: auto auto 60px 1px;
+        }
+
+
 
     .About-section{
-        height: 150vh;
-        top: 20px;
-        padding: 0 5% 0 5%;
-        margin-top: 10px;
+        padding: 10px 2% 10px 5%;
     }
 
     .about-title{
         font-size: 30px;
-        font-weight: normal;
     }
 
     .about-para{
-        top: 100px;
-        width: 80%;
         font-size: 15px;
     }
 
     .sub-title{
         font-size: 25px;
-        top: 100px;
     }
     .my-detailabout{
-        top: 200px;
         font-size: 14px;
-        width:100%;
-        margin-top: 10px;
-        letter-spacing: .8px;
-        height: 25%;
     }
 
     .project-section{
-        top: 40px;
-        padding: 0 5% 0 5%;
-        margin-top: 0;
-        height: 120vh;
-        width: 100%;
+        padding: 10px 2% 10px 5%;
     }
     .project-section .title{
-        top: 30px;
-        margin-bottom: 40px;
         font-size: 30px;
-        font-weight: 200;
     }
 
-    .project-section .cards{
-        position: relative;
-        width:fit-content;
-        padding-left: 20%;
-        margin-left: 0;
-        top: 10vh;
-    }
+    /*.project-section .cards{*/
+    /*}*/
 
     .project-section .card1{
-        margin-right: 0;
         height: 200px;
-        border-radius: 4px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        border-color: dodgerblue;
+        border-radius: 10px;
         border-width:6px 2px 6px 2px;
         width: 150px;
-        position: relative;
 
 
     }
 
     .project-section .card2{
-        margin-left: 40px;
-        margin-right: 0;
         height: 200px;
-        border-radius: 4px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        border-color: dodgerblue;
+        border-radius: 10px;
         border-width:6px 2px 6px 2px;
-        border-style: solid;
         width: 150px;
+        margin-left: 40px;
+
     }
 
     .project-section .card3{
-        margin-left: 40px;
-        background: transparent;
-        margin-right: 0;
         height: 200px;
-        border-radius: 4px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        border-color: dodgerblue;
+        border-radius: 10px;
         border-width:6px 2px 6px 2px;
-        border-style: solid;
         width: 150px;
+        margin-left: 40px;
+
     }
 
     .project-section .morebtn{
-        position: relative;
-        top: 200px;
-        left: 75%;
         width: 200px;
-        margin-right: 0;
         height:60px;
-        background: #021925;
-        border-radius: 60PX;
-        display: flex;
-        justify-content:center ;
-        align-items: center;
-        color:white;
-        text-decoration: none;
-        letter-spacing: 2px;
-        border-top:0.6px solid #073750;
-        border-left:0.6px solid #073750;
-        border-bottom:0.1px solid #073750;
-        border-right:0.1px solid #073750;
-        padding-left: 40px;
-        transition: 0.5s;
-        overflow: hidden;
     }
+
+
 
 
     .skills-section{
-        display: flex;
-        padding: 0 5% 0 5%;
-        position: relative;
-        top: 90px;
-        flex-direction: column;
-        height: 200vh;
-        letter-spacing: normal;
-        width: 100%;
-        margin-bottom: 0;
+        height: auto;
+        padding: 10px 2% 10px 5%;
+        width: auto;
+        max-width: 100%;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
     }
-    .skills-section #Skills{
-        margin-bottom: 40px;
-        font-size: 30px;
-        font-weight: 300;
 
+    .skills-section .title{
+        font-size: 30px;
+        width: auto;
+        height: auto;
     }
+
+
 
     .skill-set{
-        width: 90%;
-        font-size: 15px;
-        letter-spacing: .4px;
-        line-height: 24px;
-        position: relative;
-        top: 30px;
-    }
-
-    .skillSub-content1{
-        position: relative;
-        text-align: center;
-        top: 50px;
+        height: auto;
+        max-width: 100%;
+        width: auto;
+        font-size: 20px;
     }
 
 
-    .skillSub-content{
-        position: relative;
-        padding-left: 10%;
-        top: 10%;
-        display: flex;
-        flex-direction: row;
-        align-content: space-around;
-        align-items: center;
-        width: 100%;
-        flex-wrap: wrap;
-        margin-bottom:0;
-    }
 
-
-    .skillSub-content div{
-        position: relative;
-        left: 50px;
-        margin-right: 100px;
-        text-align: center;
-        margin-bottom: 70px;
-    }
 
     .education-section{
-        position: relative;
-        top: 0;
-        display: flex;
-        margin-top: 100px;
-        align-content: center;
-        flex-direction: column;
-        height: 110vh;
-        padding: 0 5% 0 5%;
-        letter-spacing: normal;
-        width: 100%;
-        margin-bottom: 0;
-
-
+        padding: 10px 2% 10px 5%;
     }
 
     .education-title{
@@ -653,140 +574,86 @@
 
     }
 
+    .timeline{
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: 100px auto;
+    }
+
     .service-section{
-        position: relative;
-        top: 10px;
-        padding: 0 5% 0 5%;
-        display: flex;
-        flex-direction: column;
-        height: 100vh;
-        letter-spacing: normal;
-        width: 100%;
-        margin-bottom: 0;
+        padding: 10px 2% 10px 5%;
     }
     .service-title {
         font-size: 30px;
         font-weight: 300;
-        margin-bottom: 0;
     }
 
     .cards-services{
-        padding-left: 5%;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-items: center;
-        align-items: center;
-        position: relative;
-        top: 50px;
+        margin: auto 10% auto auto;
     }
 
     .cards-services .card-1{
+        margin-top: 40px;
         width: 250px;
         height: 300px;
-        border-radius:10px;
-        border-color: dodgerblue;
-        border-width: 10px 2px 10px 2px;
-        border-style: solid;
-        text-align: center;
     }
     .card-1 p{
-        position: relative;
+        padding: 10px;
         text-transform: capitalize;
-        left: 0;
         font-size: 15px;
 
     }
 
     .card-1 .webDevelopment-title{
-        text-align: center;
-        position: relative;
         top: 20px;
-        margin-bottom: 40px;
+        margin:auto auto 40px auto;
     }
 
     .cards-services .card-2{
-        margin-left: 20px;
+        margin-top: 40px;
         width: 250px;
         height: 300px;
-        border-radius:10px;
-        border-color: dodgerblue;
-        border-width: 10px 2px 10px 2px;
-        border-style: solid;
-        text-align: center;
+        margin-left: 10px;
 
     }
 
-    .card-2 .App-development{
-        text-align: center;
-        position: relative;
-        top: 20px;
-        margin-bottom: 40px;
-    }
+
 
     .card-2 p{
-        position: relative;
-        left: 4px;
+        padding: 10px;
         font-size: 15px;
         text-transform: capitalize;
     }
 
     .cards-services .card-3{
-        margin-left: 20px;
+        margin-top: 40px;
         width: 250px;
         height: 300px;
-        border-radius:10px;
-        border-color: dodgerblue;
-        border-width: 10px 2px 10px 2px;
-        border-style: solid;
-        text-align: center;
+        margin-left: 10px;
 
     }
 
     .card-3 .title{
         text-align: center;
-        position: relative;
-        top: 20px;
         margin-bottom: 40px;
     }
 
     .card-3 p{
-        position: relative;
-        left: 4px;
+        padding: 10px;
         font-size: 15px;
         text-transform: capitalize;
     }
 
     .Gallery-section{
-        position: relative;
-        top: 20px;
-        display: flex;
-        padding: 0 5% 0 5%;
-        flex-direction: column;
-        height: 100vh;
-        letter-spacing: normal;
-        width: 100%;
-        margin-bottom: 0;
+        padding: 10px 2% 10px 5%;
     }
     .Gallery-section .Gallery-title{
         font-size: 30px;
-        font-weight: 500;
-        margin-bottom: 100px;
     }
 
-    .Gallery-section .photos {
 
-        position: relative;
-        top: 10px;
-        display: flex;
-        padding-left: 5%;
-        flex-direction: row;
-        align-items: center;
-        width: 90%;
-        justify-content: space-evenly;
-        align-content: space-between;
-        margin-bottom: 0;
-    }
     .Gallery-section .photos img{
         width: 200px;
         border: #081b29 solid 2px;
@@ -797,15 +664,8 @@
     }
 
     .contacts-section{
-        padding: 0 5% 0 5%;
-        top: 30px;
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        height: 100vh;
-        letter-spacing: normal;
-        width: 100%;
-        margin-bottom: 0;
+        padding: 10px 2% 10px 5%;
+
     }
 
     .contacts-section .contact-title{
@@ -813,53 +673,24 @@
         font-weight: 300;
     }
 
-    .contact-content{
-        display: flex;
-        flex-wrap: wrap;
-        top: 60px;
-        position: absolute;
-        margin-bottom: 0;
-    }
+
     .contact-content  a{
-        display: flex;
-        flex-direction: row;
-        color: white;
-        text-decoration: none;
-        margin-top: 80px;
-        width: fit-content;
         font-size: 15px;
     }
 
-    .contact-content a img{
-        margin-right: 5px;
-    }
 
-    .ContactForm{
-        position: relative;
-        display: flex;
-        top: 100px;
-        left: 70%;
-        height: fit-content;
-        bottom: 100px;
-        color: black;
-        font-weight: bolder;
-        font-size: medium;
-    }
+
+
 
     form input{
-        position: relative;
-        bottom: 30px;
         background:linear-gradient(rgba(37, 103, 144, 1),rgba(39, 106, 148, 1)) ;
         box-sizing: border-box;
         width: 300px;
         height: 20px;
-        padding-bottom: 20px;
         font-size: 16px;
-        margin-bottom: 50px;
         border-radius: 8px;
         font-weight: bold;
         color:greenyellow;
-
         border: 2px solid #90bef8;
         box-shadow: 2px 4px 15px rgba(105, 250, 224, 0.92);
 
@@ -867,13 +698,10 @@
     }
 
     form textarea{
-        position: relative;
-        bottom: 30px;
         background:linear-gradient(rgba(37, 103, 144, 1),rgba(39, 106, 148, 1)) ;
         box-sizing: border-box;
         width: 300px;
         font-size: 20px;
-        margin-bottom: 50px;
         color:greenyellow;
         border-radius: 10px;
         font-weight: bold;
@@ -882,48 +710,20 @@
     }
 
     .ContactForm button{
-        opacity: .7;
-        position: relative;
-        color: #46a4ea;
-        bottom: 135px;
-        right: 570px;
         font-size:20px;
         width: 100px;
         height: 50px;
         border-radius: 10px;
-        background: #073750;
-        border: 4px solid #90bef8;
         font-weight:50;
     }
-    .copyrights{
-        position: relative;
-        bottom: 20px;
-    }
-footer p{
-    width: 100%;
-    margin: 3px 0 20px 0;
-}
-    footer{
-        text-align: center;
-        border: none;
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        height:30vh;
-        justify-items: center;
-        letter-spacing: normal;
-        width: 100%;
-        align-items: center;
-        /*line-height: 40px;*/
-        font-size: 25px;
-        background:linear-gradient(to right, rgba(12, 33, 46, 1), rgba(61, 15, 48, 1));
-        margin-bottom: 0;
-        margin-top: 0;
-    }
-    footer .footer-socialLinks{
-        top: 25px;
-    }
 
+footer{
+    padding: 10px 2% 10px 5%;
+    max-width: 100%;
+    text-align: center;
+    margin: auto;
+    width: auto;
+}
 
 }
 
@@ -932,17 +732,8 @@ footer p{
 
 
     header {
-        width: 100%;
-        position: fixed;
-        top: 0;
-        left: 0;
-        background: #081b29;
         padding:2px 5% 2px 5%;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        z-index: 1000;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+
     }
 
     .logo{
@@ -967,31 +758,22 @@ footer p{
     }
 
     .navigation a{
-        margin-right: 0;
         font-size: 12px;
-        color: white;
-        text-decoration: none;
         font-weight: 500;
-        margin-left:10px ;
-        transition: .3s;
-        opacity: .7;
+        margin-left: 10px;
     }
 
-    .Home{
-        /*border: 2px solid red;*/
-        height: 90vh;
-        display: flex;
-        align-items: center;
-        padding: 0 0 0 5%;
-        width: 100%;
-        margin-bottom: 0;
-    }
 
+        .Home{
+            padding: 0 0 0 5%;
+
+        }
 
     .hContent .image {
-        /*border: 2px solid green;*/
-        position: absolute;
-        top: -20px;
+        left: 0;
+        right: 0;
+        bottom: 140px;
+        margin: auto;
         width: 350px;
         height: 80vh;
         outline: 30px solid #021925;
@@ -1001,201 +783,114 @@ footer p{
 
 
     .About-section{
-        /*border: 2px solid lightseagreen;*/
-        top: 40px;
         padding: 0 0 0 5%;
     }
 
 
     .project-section {
-        /*border: 2px solid lightcoral;*/
-        position: relative;
-        top: 50px;
         padding: 0 0 0 5%;
 
-
-    }
-    .project-section .cards{
-        position: relative;
-        top: 50px;
-        left: 6%;
-        padding: 0;
     }
 
 
-    .project-section .morebtn{
-        left: 75%;
-        width: 150px;
-        height:40px;
-
-    }
-
-    .morebtn span{
-        width: 30px;
-        height: 30px;
-        font-size: 1em;
-    }
 
     .skills-section{
-        /*border: 2px solid lightcoral;*/
         padding: 0 0 0 5%;
-        height: 170vh;
     }
 
     .skillSub-content img{
-        height: 50px;
         width: 80%;
 
     }
 
     .education-section{
-        /*border:  2px solid lightsteelblue;*/
-        position: relative;
-        top: 100px;
-        margin-top: 0;
-        margin-bottom: 0;
         padding: 0 0 0 5%;
-
-
     }
 
-    .timeline {
-        padding-left: 50px;
-        left: 10%;
-    }
 
     .service-section{
-        /*border: 3px solid #055b0d;*/
-        position: relative;
         padding: 0 0 0 5%;
-        top: 120px;
-        height: 100vh;
-        width: 100%;
-        margin-bottom: 0;
     }
 
     .cards-services{
-        top: 20%;
+        margin-left: auto;
+        margin-right:auto;
     }
 
     .cards-services .card-1{
         width: 200px;
-        height: fit-content;
     }
 
-    .card-1 p{
-        font-size: 12px;
-    }
+
 
     .cards-services .card-2{
         width: 200px;
-        height: fit-content;
     }
+
     .card-2 p{
-        font-size: 12px;
+        position: relative;
+        bottom: 15px;
     }
+
 
     .cards-services .card-3{
         width: 200px;
-        height: fit-content;
     }
-    .card-3 p{
-        font-size: 12px;
-    }
+
 
     .Gallery-section{
         padding: 0 0 0 5%;
-        /*border: 2px solid lightyellow;*/
-        top: 100px;
-        margin-bottom: 0;
     }
 
     .Gallery-section .photos {
-        padding: 0;
-        top: 10px;
-        margin-left: 0;
-        margin-bottom: 0;
     }
+
+
     .Gallery-section .photos img{
-        width: 150px;
+        width: 180px;
         border: #081b29 solid 2px;
     }
     .lastphoto1{
-        height: 200px;
+        height: 240px;
     }
     .contacts-section{
         padding: 0 0 0 5%;
-        /*border: 2px solid green;*/
-        top: 100px;
-        width: 100%;
+    }
+
+    footer{
+        padding: 0 0 0 5%;
+        max-width: 100%;
     }
 
 
-    .ContactForm{
-        position: relative;
-        display: flex;
-        top: 100px;
-        left: 50%;
-    }
 
 
-    form input{
-        width: 250px;
-
-    }
-    form textarea{
-        width: 250px;
-    }
-
-    .ContactForm button{
-        opacity: .7;
-        position: relative;
-        color: #46a4ea;
-        bottom: 135px;
-        right: 450px;
-        font-size:20px;
-        width: 100px;
-        height: 50px;
-        border-radius: 10px;
-        background: #073750;
-        border: 4px solid #90bef8;
-        font-weight:50;
-    }
-
-    /*.skillSub-content1 .sub-title{*/
-
-    /*    margin-bottom: 80px;*/
-    /*}*/
-
-    footer {
-        margin-top: 100px;
-        width: 100%;
-    }
-        footer .pfooter{
-            display: flex;
-            width: 100%;
-            justify-content: center;
-        }
-
-
-    footer p{
-        text-align: center;
-        font-size: 13px;
-    }
 
 
 }
 
 @media screen and (max-width: 426px) {
 
+    header {
+        display: flex;
+        align-content: space-between;
+        justify-content: space-between;
+        padding: 10px 5% 10px 5%;
+    }
+
+
+
+    body{
+        overflow-x: hidden;
+        width: 100%;
+    }
+
     .menu-icon {
         font-size: 24px;
         display: inline-flex;
     }
 
-    /*body{*/
-    /*    border: 2px solid red;*/
-    /*}*/
+
     .navigation {
         display: none;
         position: absolute;
@@ -1205,11 +900,10 @@ footer p{
         background-color: #333;
         flex-direction: column;
         width: 100%;
-        padding: 10px;
+        padding: 16px 0 16px 0;
         box-shadow: #073750 0 0 10px;
     }
 
-    /* Show navigation when active (e.g., after clicking menu) */
     .navigation.active {
         display: flex;
         background: #021925;
@@ -1229,28 +923,32 @@ footer p{
 
 
     .Home{
-        top:-30px;
-        height: 100vh;
-        padding: 0 ;
-        /*border: 2px solid red;*/
+        position: relative;
+        padding: 0 2% 0 2%;
+        margin: auto;
+        max-width: 426px;
+        width: auto;
     }
 
 
     .hContent{
         position: relative;
         text-align: center;
-        top: 20px;
-        max-width:100% ;
-        height: fit-content;
+        top: 0;
+        width:auto ;
+        height: auto;
+        padding: 0;
 
     }
-    .hContent .image {
-        position: absolute;
-        top: -240px;
-        right: unset;
+
+    .hContent .image{
+        right: 0;
+        padding: 3px;
+        width:400px;
         left: 10%;
-        width:300px;
-        height: 40vh;
+        margin: unset;
+        bottom: 400px;
+        z-index: 0;
     }
 
     .image img {
@@ -1259,141 +957,139 @@ footer p{
     }
 
     .hContent h1{
-        top: 20px;
-        left: 20%;
-        font-size: 35px;
-        font-weight: 700;
-        margin-bottom: 0;
+        margin: 450px auto auto auto;
+        font-size:35px ;
+        letter-spacing: .3px;
     }
 
 
     .hContent h3{
-        top: 20px;
-        font-size: 20px;
-        padding-bottom: 20px;
-        margin-top: 0;
-        font-weight: 700;
-        z-index: 1;
-        color: rgba(110, 175, 251, 1);
+        font-size: 22px;
+        margin-bottom: 40px;
     }
 
 
     .hContent p{
-        top: 10px;
-        left: 0;
-        font-size: 16px;
-        margin:10px 0 10px 0;
-        letter-spacing: .2px;
-        width:100%;
+        position: relative;
+        margin:auto ;
+        width: auto;
+        max-width: 100%;
     }
 
     .resumebutton{
-        top: 85px;
         position: relative;
-        height: 20px;
-        width: 100%;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        top: 0;
+        height: auto;
+       max-width: 100%;
     }
 
+    .resumebutton button{
+        position: relative;
+        margin: 30px auto;
+        height: auto;
+        max-width: 100%;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        top: 0;
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+
+
     .social-media{
-        position: absolute;
-        top: 330px;
+        position: relative;
+        top: 0;
         bottom: 0;
         /*text-align: center;*/
-        left: 30%;
+        left: 0;
         width: 40vw;
         display: flex;
         align-content: space-between;
         justify-content: center;
+        margin: 10px auto 20px auto;
     }
 
     .social-media a{
-        width:30px ;
         height: 30px;
-        text-align: center;
+        width: 30px;
+        margin: auto;
+
     }
 
     .social-media i{
-        display: flex;
-        /*top: 4px;*/
-        right: 5px;
         font-size: 17px;
-        position: absolute;
+        top: 4px;
+        left: 5.6px;
+
     }
 
-    .About-section{
-        /*border: 2px solid yellow;*/
-        position: relative;
-        height: 120vh;
-        display: flex;
-        flex-direction: column;
-        align-items: start;
+    .About-section {
         padding: 0 2% 0 2%;
-
-
     }
 
     .about-title{
-        width: 100%;
-        font-size: 30px;
-        font-weight: 500;
+        padding: 0;
+        margin: 50px auto;
+        position: relative;
+        max-width: 100%;
+        width: auto;
+        font-size: 20px;
     }
 
     .sub-title{
         position: relative;
-        top: 50px;
-        margin-bottom: 40px;
+        margin: auto auto 100px auto;
     }
 
     .about-para{
         position: relative;
-        top: 20px;
-        width: 90%;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        width: auto;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .about-para p{
+        margin-bottom: 30px;
     }
 
     .my-detailabout{
         position: relative;
-        top: 80px;
+        top: 0;
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+        flex-direction: column;
         width:80vw;
-        margin-top: 30px;
+        margin:80px auto auto 1px;
         letter-spacing: .8px;
-        height:40vh;
+        height: auto;
+        padding: 0;
     }
 
     .my-detailabout p{
-        width: 100%;
+        position: relative;
+        max-width: 100%;
+        width: auto;
+        padding: 0;
+        margin: auto auto 40px 0;
     }
 
     .project-section{
-        /*border: 2px solid grey;*/
-        position: relative;
-        height:fit-content;
-        display: flex;
-        flex-direction: column;
-        align-items: start;
         padding: 0 2% 0 2%;
-        letter-spacing: normal;
-        width: 100%;
-        top: -40px;
+
     }
 
     .project-section .title{
         font-size: 30px;
-        font-weight: 500;
+        margin: 20px auto 70px auto;
     }
-    .project-section .cards{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        position: relative;
-        width:fit-content;
-        margin-left: 20%;
-        gap: 1rem;
-        top: 20px;
 
-    }
     .project-section .card2{
         margin-left: 0;
 
@@ -1405,29 +1101,63 @@ footer p{
     }
 
     .project-section .morebtn{
-        top: 100px;
-        left:220px ;
-
+        margin: 100px auto 50px auto;
     }
     .skills-section{
-        height: 200vh;
         padding: 0 2% 0 2%;
-        /*border: 2px solid lightcoral;*/
-        width: 100%;
+
     }
 
+    .skills-section .title{
+        margin: 10% auto 10% auto;
+        width: auto;
+        height: auto;
+    }
 
-    .skillSub-content1 .sub-title{
-        font-size: 15px;
+    #Skills{
+        font-size: 30px;
+        font-weight: 500;
 
+    }
+    .skillSub-content{
+
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 0;
+        padding: 0;
+        left: 0;
+        margin:100px auto 50px auto;
+        width: auto;
+        height: auto;
+        max-width: 100%;
+    }
+
+    .skill-set{
+        height: auto;
+        max-width: 100%;
+        width: auto;
+        font-size: 18px;
+        letter-spacing: .4px;
+        line-height: 40px;
     }
 
     .education-section{
-    /*border: 2px solid lightsteelblue;*/
-        top: 200px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        max-width: 100%;
+        height: auto;
+        width: auto;
+        padding: 0 2% 0 2%;
+
     }
 
     .education-title{
+        padding: 0;
+        width: auto;
+        max-width: 100%;
+        margin: 30% auto 20% auto;
         font-size: 30px;
         font-weight: 500;
     }
@@ -1435,9 +1165,12 @@ footer p{
     .timeline {
         position: relative;
         padding-left: 0;
-        width: 300px;
-        left: 20%;
-        top: 13%;
+        width: 250px;
+        margin: auto;
+        left: 5%;
+        bottom: 0;
+        right: 0;
+        top: 0;
     }
 
     .timeline::before {
@@ -1446,16 +1179,27 @@ footer p{
         width: 2px;
         /*background-color: #56eaef;*/
     }
-    .service-section{
+    .service-section {
         padding: 0 2% 0 2%;
-        /*border: 2px solid #055b0d;*/
-        height: 120vh ;
     }
-
+    .service-title{
+        font-size: 40px;
+        font-weight: 500;
+        width: auto;
+        height: auto;
+        margin:30%  auto auto auto;
+    }
     .cards-services{
-        padding-left: 20%;
-        align-content: space-between;
-        top: 100px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 0;
+        padding: 0;
+        left: 0;
+        margin:100px auto 50px auto;
+        width: auto;
+        height: auto;
+        max-width: 100%;
     }
     .cards-services .card-1{
         margin-left: 20px;
@@ -1471,80 +1215,155 @@ footer p{
     }
 
     .Gallery-section{
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
         padding: 0 2% 0 2%;
-        /*border: 2px solid lightyellow;*/
-        top: 200px;
+
     }
 
-    .Gallery-section .photos {
+    .Gallery-section .Gallery-title{
+        margin: 30% auto 10% auto;
+        width: auto;
+        height: auto;
 
-        position: relative;
-        right: 0;
-        top: 0;
-        left: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        justify-content: space-evenly;
-        align-content: space-between;
-        margin-bottom: 0;
-        bottom: 100px;
     }
+
+
+
 
     .Gallery-section .photos img{
-        width: 100px;
-        /*border: #081b29 solid 2px;*/
+        width: auto;
+        max-width:50% ;
+        height: auto;
+        border: #081b29 solid 2px;
     }
 
     .contacts-section{
-        top: 250px;
-        height: 100vh;
-    padding: 0 2% 0 2%;
-        /*border: 2px solid red;*/
+        padding: 0 2% 0 2%;
+
     }
+
     .contacts-section .contact-title{
-        font-size: 30px;
+        margin: 10% auto 40% auto;
+        width: auto;
+        height: auto;
+
     }
-    .contact-links{
-        position: absolute;
-        top: 400px;
+    .contact-content{
+        height: auto;
+        margin: auto auto 20% auto;
+        width: auto;
+        max-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        top: 0;
+        position: relative;
+    }
+
+ .contact-links{
+     position: relative;
+     top: 300px;
+ }
+
+    .contact-links #MailLink img {
+        position: relative;
+        bottom: 8px;
+        
     }
     .ContactForm{
-        position: absolute;
-        top: 100px;
-        left: 80px;
+        position: relative;
+        top: auto;
+        left: 0;
+        bottom: 100px;
+        margin: auto;
+        width: auto;
+        max-width: 100%;
 
 
     }
     .ContactForm button{
-        top: 120px;
-        left: 200px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top:100px;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+    }
+    .contact-links{
+        max-width: 100%;
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        margin: auto;
+        width:auto;
+        height: auto;
+        /*border: 2px solid lightseagreen;*/
+        /*justify-content: space-between;*/
+        /*align-content: space-between;*/
+        /*align-items: ;*/
+        justify-content: space-between; /* Distributes space evenly between items */
+        align-items: center; /* Aligns items vertically in the center */
 
     }
 
 
-    footer{
-        top: 200px;
-        width: 100%;
 
-    }
 
     .footer-socialLinks{
-        position: absolute;
-        bottom: 200px;
-        width: 300px;
-        display: flex;
-        justify-content: space-evenly;
+        top: 10px;
+        width: auto;
+        position: relative;
+        gap: 15px;
+        margin:auto;
 
     }
-    footer p{
-        text-align: center;
+
+    .pfooter p{
+        font-size: 15px;
+        margin: auto;
+        width: auto;
+        max-width: 100%;
+    }
+
+    footer{
+        padding: 0 2% 0 2%;
+
         width: 100%;
     }
+
+
+
 
 }
 
+
+@media screen and (max-width:876px) {
+
+    .hContent .image{
+        margin-right: -10px;
+        width: 300px;
+        height: 80vh;
+    }
+}
+
+@media screen and (max-width: 613px){
+    .education-section{
+        padding: 0 2% 0 2%;
+    }
+
+    .timeline{
+        width: auto;
+    }
+
+
+    .timeline-year{
+        width: auto;
+    }
+    .timeline-content div{
+        width: auto;
+    }
+
+    .timeline-content p{
+        width: auto;
+    }
+}
