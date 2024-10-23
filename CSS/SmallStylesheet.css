@@ -2,15 +2,26 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
 
 }
+
+html{
+    overflow-x: hidden;
+}
+
+
 .menu-icon{
     cursor: pointer;
     display: none;
 }
 
+
+
 body{
-    background: #021925;
     color: white;
     font-family: "Poppins", sans-serif;
     font-style: normal;
@@ -24,8 +35,7 @@ header nav ul li{
 
 
 header {
-    width: 100%;
-    min-width: auto;
+    min-width: 100vw;
     position: fixed;
     top: 0;
     left: 0;
@@ -89,11 +99,14 @@ header {
 
 
 .Home{
-    height: 90vh;
+    height: auto;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     padding: 0 10%;
     width: 100%;
+    background: #021925;
+
 }
 
 
@@ -195,16 +208,12 @@ header {
 }
 
 
-/*.resumebutton button:hover::after{*/
-/*    opacity: 2;*/
-/*    background:rgba(110, 175, 251, 1);*/
-/*}*/
+
 
 .resumebutton button:hover{
     color:  white;
     background: rgb(77, 147, 234);
     border: 5px solid rgb(138, 186, 255);
-    /*box-shadow: #042042 0 0 1em;*/
 
 }
 
@@ -266,10 +275,12 @@ header {
 
 .hContent .image {
     position: absolute;
-    top: 50px;
+    top: 10px;
     right: 30px;
     width: 700px;
     height: 90vh;
+    outline: 50px solid #021925;
+    outline-offset: -40px;
 }
 
 .image img {
@@ -286,16 +297,19 @@ header {
 
 
 .About-section{
+    min-height: 100vh;
     position: relative;
-    height: 100vh;
+    height: auto;
     display: flex;
-    flex-direction: column;
     align-items: start;
+    flex-direction: column;
     padding: 8% 0 0 10%;
+    background: #003244;
 }
 
 
 .about-title{
+
     font-size: 40px;
     font-weight: 500;
 }
@@ -303,7 +317,11 @@ header {
 .about-para{
     position: relative;
     top: 30px;
-    width: 50vw;
+    width: auto;
+    max-width: 60vw;
+
+    height: auto;
+
 }
 
 .sub-title{
@@ -314,25 +332,31 @@ header {
 
 .my-detailabout{
     position: relative;
-    top: 80px;
+    top: 0;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     width:80vw;
-    margin-top: 30px;
+    margin:150px auto 10px 2px;
     letter-spacing: .8px;
-    height: 100%;
+    height: auto;
+
 }
 
 .my-detailabout p{
+    margin-bottom: 30px;
+    margin-right:auto ;
+    margin-left:auto;
     width: 40vw;
 }
 
 
 .project-section{
-    margin-top: 50px;
+    margin: auto;
+    background: #021925;
     position: relative;
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -500,12 +524,15 @@ header {
 }
 
 .skills-section{
+    background: #003244;
+   height: auto;
     display: flex;
     flex-direction: column;
-    height: 150vh;
+    min-height: 230vh;
     padding: 8% 0 0 10%;
     letter-spacing: normal;
-    width: 100%;
+    max-width: 100%;
+    width: auto;
     margin-bottom: -400px;
 }
 
@@ -542,12 +569,14 @@ header {
     flex-direction: row;
     align-content: space-around;
     align-items: center;
-    width: 100%;
     flex-wrap: wrap;
     margin-bottom: 200px;
+    height: auto;
+    width: auto;
 }
 
 .skillSub-content div{
+
     position: relative;
     left: 50px;
     margin-right: 100px;
@@ -563,16 +592,17 @@ header {
 
 .education-section{
     position: relative;
-    top: 500px;
     display: flex;
-    margin-top: 100px;
+    margin: auto;
     align-content: center;
     flex-direction: column;
-    height: 100vh;
+    min-height: 100vh;
     padding: 8% 0 0 10%;
     letter-spacing: normal;
-    width: 100%;
-    margin-bottom: 200px;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    background: #021925;
 
 
 }
@@ -670,15 +700,15 @@ header {
 
 
 .service-section{
+    background: #003244;
+margin: auto;
     position: relative;
-    top: 400px;
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    min-height: 100vh;
     padding: 8% 0 0 10%;
     letter-spacing: normal;
-    width: 100%;
-    margin-bottom: 100px;
+    max-width: 100%;
 }
 
 
@@ -794,14 +824,17 @@ header {
 
 .Gallery-section{
     position: relative;
-    top: 200px;
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    min-height: 100vh;
     padding: 8% 8% 0 10%;
     letter-spacing: normal;
-    width: 100%;
-    margin-bottom: 100px;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+margin: auto;
+    background: #021925;
+
 }
 .Gallery-section .Gallery-title{
     font-size: 40px;
@@ -838,14 +871,17 @@ header {
 
 
 .contacts-section{
-    top: 200px;
+    background: #003244;
+    margin: auto;
     position: relative;
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    min-height: 100vh;
     padding: 8% 0 0 10%;
     letter-spacing: normal;
-    width: 100%;
+     max-width: 100%;
+    width: auto;
+    height: auto;
 }
 .contact-content{
     display: flex;
@@ -950,14 +986,15 @@ form textarea{
 
 
 footer{
-    margin-top: 400px;
     position: relative;
     display: flex;
     flex-direction: column;
-    height: 30vh;
+    min-height: 30vh;
+    height: auto;
+    width: auto;
     justify-items: center;
     letter-spacing: normal;
-    width: 100%;
+    max-width: 100%;
     align-items: center;
     /*line-height: 40px;*/
     font-size: 25px;

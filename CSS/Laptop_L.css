@@ -18,10 +18,6 @@
 
 
     .Home{
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom:0;
         position: relative;
         height: auto;
         width: auto;
@@ -881,8 +877,7 @@ footer{
 
 
     body{
-        overflow-x: hidden;
-        width: 100%;
+       /*border: 2px solid yellow;*/
     }
 
     .menu-icon {
@@ -942,22 +937,29 @@ footer{
     }
 
     .hContent .image{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        background: #56eaef;
         right: 0;
         padding: 3px;
-        width:400px;
-        left: 10%;
-        margin: unset;
-        bottom: 400px;
+        max-width: 100%;
+        width:auto;
+        left: 9%;
+        margin-right: unset;
+        margin-left: unset;
         z-index: 0;
+        bottom: 0;
     }
 
     .image img {
-        width: 100%;
+        width:100%;
         height: 100%;
     }
 
     .hContent h1{
-        margin: 450px auto auto auto;
+        margin: auto auto auto auto;
         font-size:35px ;
         letter-spacing: .3px;
     }
@@ -1124,13 +1126,20 @@ footer{
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        gap: 0;
+        gap: 10px;
         padding: 0;
         left: 0;
-        margin:100px auto 50px auto;
+        right: 0;
+        margin:100px 10% 50px auto;
         width: auto;
         height: auto;
         max-width: 100%;
+    }
+
+    .skillSub-content div{
+       margin: auto;
+        width: auto;
+        height: auto;
     }
 
     .skill-set{
@@ -1165,12 +1174,34 @@ footer{
     .timeline {
         position: relative;
         padding-left: 0;
-        width: 250px;
+        width: auto;
+        height: auto;
         margin: auto;
         left: 5%;
         bottom: 0;
         right: 0;
         top: 0;
+    }
+    .timeline p{
+        width: auto;
+        height: auto;
+    }
+
+
+    .timeline-item{
+        max-width: 250px;
+        width: auto;
+        height: auto;
+    }
+
+    .timeline-content{
+        width: auto;
+        height: auto;
+    }
+
+    .timeline-content p{
+        width: auto;
+        height: auto;
     }
 
     .timeline::before {
@@ -1266,7 +1297,7 @@ footer{
     .contact-links #MailLink img {
         position: relative;
         bottom: 8px;
-        
+
     }
     .ContactForm{
         position: relative;
