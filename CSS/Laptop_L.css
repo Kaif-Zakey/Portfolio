@@ -720,21 +720,10 @@ position: absolute;
         font-size: 20px;
     }
 
-    #Skills{
+    #Skills {
         font-size: 20px;
-
-    }
-    .skillSub-content{
-
     }
 
-    .skillSub-content div{
-
-    }
-
-    .skill-set{
-
-    }
 
     .education-section{
         padding: 3% 2% 5% 2%;
@@ -974,6 +963,7 @@ position: absolute;
     .skill-set{
         font-size: 12px;
     }
+
 
     .education-title{
         font-size: 20px;
