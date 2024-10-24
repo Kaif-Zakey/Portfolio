@@ -412,10 +412,7 @@ footer{
         padding: 0 0 0 5%;
     }
 
-    .skillSub-content img{
-        width: 80%;
 
-    }
 
     .education-section{
         padding: 0 0 0 5%;
@@ -492,6 +489,13 @@ z-index: -1;
    .hContent img{
        z-index: -1;
    }
+    /*.skillSub-content img{*/
+    /*    width: 30px;*/
+    /*    height: auto;*/
+    /*    margin-right: 0;*/
+    /*    margin-bottom: 0;*/
+    /*    object-fit: cover;*/
+    /*}*/
 
     .hContent p{
         z-index: 300;
@@ -724,6 +728,13 @@ position: absolute;
         font-size: 20px;
     }
 
+    /*.skillSub-content img{*/
+    /*    width: 30px;*/
+    /*    height: auto;*/
+    /*    margin-right: 0;*/
+    /*    margin-bottom: 0;*/
+    /*    object-fit: cover;*/
+    /*}*/
 
     .education-section{
         padding: 3% 2% 5% 2%;
@@ -933,6 +944,14 @@ position: absolute;
     .sub-title{
         margin-bottom: 8px;
     }
+
+    /*.skillSub-content img{*/
+    /*    width: 30px;*/
+    /*    height: auto;*/
+    /*    margin-right: 0;*/
+    /*    margin-bottom: 0;*/
+    /*    object-fit: cover;*/
+    /*}*/
 
     .my-detailabout{
         font-size: 13px;
