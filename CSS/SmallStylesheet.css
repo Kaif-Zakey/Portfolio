@@ -561,7 +561,7 @@ header {
     border-radius: 20px; /* Rounded rectangle shape */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add some shadow */
     transition: transform 0.3s ease-in-out;
-        width: fit-content;
+        width: 150px;
     /*position: relative;*/
     /*left: 50px;*/
     margin-right: 100px;
@@ -573,8 +573,7 @@ header {
     transform: scale(1.1); /* Hover effect for interactivity */
 }
 .skillSub-content img{
-    width: 60px;
-    height: 60px;
+    width: 30px;
     border-radius: 50%; /* Make the images circular */
     border: 2px solid #ddd;
     margin-right: 4px;
