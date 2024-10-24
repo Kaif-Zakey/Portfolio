@@ -10,12 +10,18 @@
 }
 
 :root{
-    --bg-color:#080808;
-    --second-bg-color:#1b0000;
+    --bg-color: #003244;
+    --second-bg-color: #003244;
     --text-color:white;
-    --main-color: rgb(206, 114, 242); /*#0dd2af*/
+    --main-color: rgb(86, 234, 239); /*#0dd2af*/
 
 }
+.heading{
+    font-size: 3rem;
+    text-align: center;
+    margin: 5rem 0;
+}
+
 html{
     font-size: 60%;
     overflow-x: hidden;
@@ -24,26 +30,24 @@ body{
     background: var(--bg-color);
     color: var(--text-color);
 }
-.Tasks{
-    background: url("Assets/icon/telephone.png")center no-repeat;
-    background-size: cover;
-}
 .project-box{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    place-items: center;
+    display: flex;
+    justify-items: center;
+    align-content: center;
+    justify-content: center;
     margin: 5rem 0;
     gap: 3rem;
-    row-gap: 5rem;
+    flex-wrap: wrap;
 }
 .project-card{
-    height: 600px;
+    max-height: 600px;
     max-width: 450px;
     background-color: rgba(0,0,0,0.3);
     backdrop-filter: blur(30px);
     border: 2px solid var(--main-color);
     border-radius: 5rem;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -70,135 +74,4 @@ body{
 }
 .project-card p{
     font-size: 1.6rem;
-}
-
-@media (max-width: 1285px) {
-    html{
-        font-size: 55%;
-    }
-    .Qualifications-container{
-        padding-bottom: 7rem;
-        grid-template-columns: repeat(1,1fr);
-        margin: 0 5rem;
-    }
-    .project-box{
-        grid-template-columns: repeat(2,1fr);
-
-    }
-    .project-box img{
-        min-width: 30vw;
-
-    }
-
-}
-
-@media (max-width: 991px) {
-
-    header{
-        padding: 2rem 3%;
-    }
-    section{
-        padding: 10rem 3% 2rem;
-    }
-    .contact form{
-        flex-direction: column;
-    }
-    .footer{
-        padding: 2rem 3%;
-    }
-
-}
-
-@media (max-width: 895px) {
-    #menu-icon {
-        display: block;
-    }
-
-    .navbar {
-        position: absolute;
-        top: 100%;
-        right: 0;
-        width: 50%;
-        padding: 1rem 3%;
-        background: rgba(0, 0, 0, 0.8);
-        backdrop-filter: blur(20px);
-        border-bottom-left-radius: 2rem;
-        border-left: 2px solid var(--main-color);
-        border-bottom: 2px solid var(--main-color);
-        display: none;
-    }
-
-    .navbar .active {
-        display: block;
-    }
-
-    .navbar a {
-        display: block;
-        font-size: 2rem;
-        margin: 3rem 0;
-        color: white;
-    }
-
-    .home {
-        flex-direction: column-reverse;
-        margin: 5rem 4rem;
-        gap: 3rem;
-    }
-
-    .home-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-    }
-
-    .home-content h3 {
-        font-size: 2.6rem;
-    }
-
-    .home-content h1 {
-        font-size: 8rem;
-        margin-top: 3rem;
-    }
-
-    .home-content p {
-        max-width: 600px;
-        margin: 0 auto;
-    }
-
-    .home-img img {
-        width: 56vw;
-        margin: 3rem 0;
-    }
-
-    .about {
-        flex-direction: column-reverse;
-        padding: 10rem 9% 10rem;
-    }
-
-    .about .heading {
-        margin: 3rem 0;
-    }
-
-    .about img {
-        width: 50vw;
-    }
-
-    .Qualifications h2 {
-        margin-bottom: 3rem;
-    }
-
-    .Qualifications-container {
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    .project-box {
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    .project-box img {
-        min-width: 42rem;
-    }
-
 }
