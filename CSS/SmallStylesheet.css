@@ -22,6 +22,7 @@ html{
 
 
 body{
+    background: #021925;
     color: white;
     font-family: "Poppins", sans-serif;
     font-style: normal;
@@ -150,7 +151,9 @@ header {
     font-size: 16px;
     margin:30px 0 30px 0;
     letter-spacing: .4px;
-    width: 51.8%;
+    max-width: 51.8%;
+    width: auto;
+    height: auto;
 }
 
 .hContent h3{
@@ -291,11 +294,6 @@ header {
 
 
 
-
-
-
-
-
 .About-section{
     min-height: 100vh;
     position: relative;
@@ -377,18 +375,24 @@ header {
     flex-direction: row;
     align-items: center;
     position: relative;
-    width:fit-content;
-    margin-left: 260px;
-    gap: 1rem;
-    top: 10vh;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    /*width:auto;*/
+    gap: 10rem;
+    overflow: hidden;
+    min-height: 100vh;
+    flex-wrap: wrap;
+    width: 100%;
+
 
 }
 
 
-.project-section .card1{
-    margin-right: 50px;
+.project-section .card{
+    /*margin-right: 50px;*/
     background: transparent;
-    height: 200px;
+    min-height: 200px;
     border-radius: 4px;
     display: flex;
     flex-direction: column;
@@ -398,39 +402,8 @@ header {
     border-style: solid;
     width: 150px;
     position: relative;
-
-
-}
-.project-section .card2{
-    margin-left: 100px;
-    position: relative;
-    background: transparent;
-    margin-right: 40px;
-    height: 200px;
-    border-radius: 4px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-color: dodgerblue;
-    border-width:6px 3px 6px 3px;
-    border-style: solid;
-    width: 150px;
-}
-
-.project-section .card3{
-    margin-left: 100px;
-    position: relative;
-    background: transparent;
-    margin-right: 40px;
-    height: 200px;
-    border-radius: 4px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-color: dodgerblue;
-    border-width:6px 3px 6px 3px;
-    border-style: solid;
-    width: 150px;
+    cursor: pointer;
+    margin-bottom: 50px;
 }
 
 .project-section button{
@@ -446,6 +419,10 @@ header {
     border-radius: 100%;
 }
 
+.project-section button:hover{
+    background: #56eaef;
+    color: #021925;
+}
 
 
 .project-section i{
@@ -454,11 +431,12 @@ header {
 }
 
 .project-section .morebtn{
-    position: relative;
-    top: 200px;
-    left: 1100px;
-    width: 200px;
-    margin-right: 300px;
+    position: absolute;
+    bottom: 50px;
+    right: 40px;
+    min-width: 200px;
+    /*width: 200px;*/
+    /*margin-right: 300px;*/
     height:60px;
     background: #021925;
     border-radius: 60PX;
@@ -570,15 +548,15 @@ header {
     align-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+    justify-content: center;
     margin-bottom: 200px;
     height: auto;
     width: auto;
 }
 
 .skillSub-content div{
-
-    position: relative;
-    left: 50px;
+    /*position: relative;*/
+    /*left: 50px;*/
     margin-right: 100px;
     text-align: center;
     margin-bottom: 70px;
@@ -619,6 +597,7 @@ header {
     width: 600px;
     left: 25%;
     top: 20%;
+    margin-top: 100px;
 }
 
 .timeline::before {
@@ -701,14 +680,15 @@ header {
 
 .service-section{
     background: #003244;
-margin: auto;
+    margin: auto;
     position: relative;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     padding: 8% 0 0 10%;
+    height: auto;
     letter-spacing: normal;
-    max-width: 100%;
+    /*max-width: 100%;*/
 }
 
 
@@ -716,109 +696,59 @@ margin: auto;
     font-size: 40px;
     font-weight: 500;
     margin-bottom: 40px;
+    width: auto;
 }
 
 .cards-services{
-    padding-left: 10%;
+    /*padding-left: 10%;*/
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-items: center;
     align-items: center;
     position: relative;
-    top: 50px;
+    justify-items: center;
+    /*text-align: center;*/
+    justify-content: center;
+    overflow: hidden;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
 
 
 
 
-.cards-services .card-1{
-    width: 300px;
-    height: 350px;
+.cards-services .scards{
+    position: relative;
+    max-width: 300px;
+    width: auto;
+    min-height: 50vh;
+    height: auto;
     border-radius:10px;
     border-color: dodgerblue;
     border-width: 10px 3px 10px 3px;
     border-style: solid;
     text-align: center;
+    margin-bottom: 30px;
 }
-.card-1 img{
+.scards img{
     position: relative;
     top: 10px;
+
 }
-.card-1 .webDevelopment-title{
+
+.scards .title{
     text-align: center;
     position: relative;
     top: 20px;
     margin-bottom: 60px;
 }
 
-.card-1 p{
+.scards p{
     position: relative;
     text-transform: capitalize;
     left: 4px;
+    width: auto;
 
-}
-.cards-services .card-2{
-    margin-left: 100px;
-    width: 300px;
-    height: 350px;
-    border-radius:10px;
-    border-color: dodgerblue;
-    border-width: 10px 3px 10px 3px;
-    border-style: solid;
-    text-align: center;
-
-}
-
-
-.card-2 img{
-    position: relative;
-    /*left: 110px;*/
-    top: 10px;
-}
-
-.card-2 .App-development{
-    text-align: center;
-    position: relative;
-    top: 20px;
-    margin-bottom: 60px;
-}
-
-.card-2 p{
-    position: relative;
-    left: 4px;
-    text-transform: capitalize;
-}
-
-.cards-services .card-3{
-    margin-left: 100px;
-    width: 300px;
-    height: 350px;
-    border-radius:10px;
-    border-color: dodgerblue;
-    border-width: 10px 3px 10px 3px;
-    border-style: solid;
-    text-align: center;
-
-}
-
-
-.card-3 img{
-    position: relative;
-    /*left: 110px;*/
-    top: 10px;
-}
-.card-3 .title{
-    text-align: center;
-    position: relative;
-    top: 20px;
-    margin-bottom: 60px;
-}
-.card-3 p{
-    position: relative;
-    left: 4px;
-    text-transform: capitalize;
 }
 
 
@@ -832,7 +762,7 @@ margin: auto;
     max-width: 100%;
     width: auto;
     height: auto;
-margin: auto;
+    margin: auto;
     background: #021925;
 
 }
@@ -848,9 +778,11 @@ margin: auto;
     position: relative;
     top: 100px;
     display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
     flex-direction: row;
     align-items: center;
-    width: 100%;
+    max-width: 100%;
     justify-content: space-evenly;
     align-content: space-between;
     margin-bottom: 200px;
@@ -869,123 +801,134 @@ margin: auto;
     height: 400px;
 }
 
-
-.contacts-section{
+.contacts-section {
+    padding: 60px 20px;
     background: #003244;
-    margin: auto;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-title h2 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+    color: #f8f5f5;
+    margin-bottom: 40px;
     position: relative;
+}
+
+.contact-title h2::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: #007bff;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+.contact-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+/* Contact Links Styling */
+.contact-links {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
-    padding: 8% 0 0 10%;
-    letter-spacing: normal;
-     max-width: 100%;
-    width: auto;
-    height: auto;
+    justify-content: center;
+    gap: 25px;
 }
-.contact-content{
+
+.contact-links div {
     display: flex;
-    flex-wrap: wrap;
-    top: 200px;
-    position: absolute;
-}
-.contacts-section .contact-title{
-    font-size: 40px;
-    font-weight: 500;
-}
-.contact-content  a{
-    display: flex;
-    flex-direction: row;
-    color: white;
-    text-decoration: none;
-    margin-top: 80px;
-    width: fit-content;
-    font-size: 20px;
-}
-
-.contact-content a img{
-    margin-right: 10px;
-}
-.ContactForm{
-    position: relative;
-    display: flex;
-    top: 100px;
-    left: 500px;
-    bottom: 100px;
-    color: black;
-    font-weight: bolder;
-    font-size: medium;
-
-}
-
-
-form input{
-    position: relative;
-    bottom: 30px;
-    background:linear-gradient(rgba(37, 103, 144, 1),rgba(39, 106, 148, 1)) ;
-    box-sizing: border-box;
-    width: 500px;
-    height: 20px;
-    padding: 20px;
-    font-size: 20px;
-    margin-bottom: 50px;
-    border-radius: 8px;
-    font-weight: bold;
-    color:greenyellow;
-
-    border: 2px solid #90bef8;
-    box-shadow: 2px 4px 15px rgba(105, 250, 224, 0.92);
-
-
-}
-
-
-input::placeholder {
-    color: #bbb;
-}
-textarea::placeholder{
-    color: #bbb;
-}
-
-form textarea{
-    position: relative;
-    bottom: 30px;
-    background:linear-gradient(rgba(37, 103, 144, 1),rgba(39, 106, 148, 1)) ;
-    box-sizing: border-box;
-    width: 500px;
-    font-size: 20px;
-    margin-bottom: 50px;
-    color:greenyellow;
+    align-items: center;
+    gap: 15px;
+    padding: 10px 20px;
+    background-color: #4d93ea;
     border-radius: 10px;
-    font-weight: bold;
-    border: 2px solid #90bef8;
-    box-shadow: 2px 4px 15px rgba(105, 250, 224, 0.92);
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
-.ContactForm button{
-    opacity: .7;
-    position: relative;
-    color: #46a4ea;
-    bottom: 135px;
-    right: 800px;
-    font-size:30px;
-    width: 180px;
-    height: 50px;
+.contact-links div:hover {
+    background-color: #87ffd8;
+    color: #ffffff;
+    transform: translateY(-5px);
+}
+
+.contact-links img {
+    width: 30px;
+    height: 30px;
+}
+
+.contact-links p {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+/* Contact Form Styling */
+.ContactForm {
+    flex: 1;
+    max-width: 600px;
+}
+
+.ContactForm form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.ContactForm input,
+.ContactForm textarea {
+    width: 100%;
+    padding: 15px;
+    border-color: #8ff0fd;
     border-radius: 10px;
-    background: #073750;
-    border: 4px solid #90bef8;
-    font-weight:50;
+    font-size: 1rem;
+    background-color: rgba(68, 113, 145, 0.67);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: border-color 0.3s, background-color 0.3s;
 }
 
-.ContactForm button:hover{
-    box-shadow: 2px 4px 15px rgba(105, 250, 224, 0.92);
-    color: #d6e4ef;
-    opacity: 1;
-
+.ContactForm input:focus,
+.ContactForm textarea:focus {
+    border-color: #8ff0fd;
+    background-color: rgb(47, 203, 238);
+    outline: none;
 }
 
+.ContactForm textarea {
+    background-color: rgba(68, 113, 145, 0.67);
+    resize: none;
+    height: 150px;
+}
+
+.ContactForm button {
+    padding: 15px 30px;
+    background-color: #007bff;
+    color: #003244;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.ContactForm button:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+}
 
 footer{
+    margin: auto;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -998,37 +941,39 @@ footer{
     align-items: center;
     /*line-height: 40px;*/
     font-size: 25px;
-    background:linear-gradient(to right, rgba(12, 33, 46, 1), rgba(61, 15, 48, 1));
-    margin-bottom: 0;
+    background:linear-gradient(to right, rgb(7, 55, 80), rgb(7, 55, 80));
 }
-footer .pfooter{
-    display: flex;
+.pfooter{
+    /*width: auto;*/
     width: 100%;
+    display: inline-flex;
+    flex-direction: row;
     justify-content: center;
-}
-footer p{
-    position: relative;
-    top: 80px;
-    width: 55%;
-    color: #5ba7e5;
-    font-size: 20px;
 }
 
 .footer-socialLinks{
-    position: absolute;
-    bottom: 150px;
-    width: 500px;
+    position: relative;
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    margin-bottom: 20px;
+    gap: 15px;
 }
 
-footer .copyrights p{
-    position: relative;
-    font-size: 15px;
-    top: 110px;
-    color: #56eaef;
+.pfooter{
     width: 100%;
-    margin-bottom: 10px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.copyrights p{
+    color: #56eaef;
+    margin: 10px auto 10px auto;
 }
 
 .footer-socialLinks a{

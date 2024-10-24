@@ -18,18 +18,7 @@
 
 
     .Home{
-        position: relative;
-        height: auto;
-        width: auto;
-        max-width: 1440px;
-        margin: auto;
         padding: 10px 5% 10px 8%;
-    }
-    .hContent{
-        margin: auto;
-        position: relative;
-       width: auto;
-        max-width:100% ;
     }
     .hContent h1{
         margin:200px auto auto 1px;
@@ -44,10 +33,7 @@
 
     }
     .hContent p{
-        margin:30px 0 30px 0;
-        font-size: 20px;
-        max-width: 55%;
-        width: auto;
+
     }
     .resumebutton{
         top: 0;
@@ -63,7 +49,7 @@
     }
 
     .social-media{
-        bottom: 0;
+        bottom: 10px;
         width: fit-content;
     }
 
@@ -76,18 +62,8 @@
     }
 
     .hContent .image {
-        display: flex;
-        justify-items: end;
-        justify-content: end;
-        position: absolute;
-        overflow-x: unset;
-        left: 0;
-        top: 0;
-        right: 0;
-        bottom: 0;
         margin: 2px 2px auto auto;
         width: 500px;
-        height: auto;
         outline: 40px solid #021925;
         outline-offset: -30px;
 
@@ -142,54 +118,29 @@
 
 
     .project-section{
-        margin: auto;
-        height: auto;
-        width: auto;
-        max-width: 100%;
+
         padding: 10px 5% 10px 8%;
     }
 
     .project-section .title{
-        font-size: 55px;
+        font-size: 50px;
         font-weight: 300;
         margin: 100px auto 20px 1px;
     }
 
-    .project-section .cards {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        margin:40px auto auto auto;
-        top: 0;
-    }
+    /*.project-section .cards {*/
+    /*    display: flex;*/
+    /*    justify-content: center;*/
+    /*    flex-wrap: wrap;*/
+    /*    margin:40px auto auto auto;*/
+    /*    top: 0;*/
+    /*}*/
 
-    .project-section .card1{
-      height: 300px;
-      border-width:6px 1px 6px 1px;
-      width: 200px;
-    }
-    .project-section .card2{
-        height: 300px;
-        border-width:6px 1px 6px 1px;
-        width: 200px;
-    }
 
-    .project-section .card3{
-        height: 300px;
-        border-width:6px 1px 6px 1px;
-        width: 200px;
-    }
 
-    .project-section .morebtn{
-        position: relative;
-        margin:100px 10px 50px auto;
-        top: 0;
-        left: 0;
-    }
+
 
     .skills-section{
-        height: auto;
-        width: auto;
         /*border: 4px solid yellow;*/
         padding: 10px 5% 10px 8%;
         margin: auto;
@@ -203,524 +154,218 @@
 
     }
 
-    .skillSub-content1{
-        position: relative;
-        margin-top: 50px;
-        margin-bottom: auto;
-        text-align: center;
-        top: 0;
-    }
 
-    .skillSub-content{
-        margin-bottom: auto;
-    }
 
 
     .skills-section #Skills{
-        font-size: 55px;
+        font-size: 50px;
         font-weight: 700;
     }
     .skill-set{
         width: auto;
-        max-width: 100%;
         font-size: 20px;
+        margin: auto;
     }
 
     .education-section{
         /*border: 4px solid #c679f3;*/
-        top: 0;
-        bottom: 0;
         padding: 10px 5% 10px 8%;
-      margin: auto;
-
     }
+
+
     .education-title{
-        font-size: 55px;
+        margin:100px auto 50px 1px;
+        font-size: 50px;
         font-weight: 300;
     }
+
     .service-section{
-        top: 0;
-        bottom: 0;
-        height: auto;
-        width: auto;
         /*border: 4px solid #90f6d2;*/
         padding: 10px 5% 10px 8%;
-        margin: auto;
 
-    }
 
-    .cards-services{
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 0;
-        padding: 0;
-        margin: 40px  auto auto 2px ;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
     }
 
     .service-title{
-        font-size: 55px;
+        margin:100px auto 50px 1px;
+        font-size: 50px;
         font-weight: 300;
     }
 
     .Gallery-section{
-
         /*border: 4px solid #f3c679;*/
         padding: 10px 5% 10px 8%;
-        height: auto;
-        width: auto;
-        max-width: 100%;
-        top: 0;
-        bottom: 0;
-        margin:auto;
     }
 
-
-    .Gallery-section .photos {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 0;
-        margin-top: 40px;
-        padding: 0;
-        left: 0;
-    }
 
     .Gallery-section .Gallery-title{
-        font-size: 55px;
+        margin:100px auto 50px 1px;
+        font-size: 50px;
         font-weight: 300;
-        margin-bottom: 50px;
 
     }
 
-    .contact-content{
-        top: 100px;
-    }
 
-    .contacts-section{
-        top: 0;
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        /*border: 4px solid red;*/
-        padding: 10px 5% 10px 8%;
-        width: auto;
-        margin: auto;
-        height: auto;
-    }
-
-    .contact-content{
-        display: flex;
-        flex-wrap: wrap;
-        top: 0;
-        position: relative;
-    }
-
-    .contacts-section .contact-title{
-        font-size: 55px;
-        font-weight: 300;
-        width: auto;
-        max-width: 100%;
-    }
-    .ContactForm{
-        top: 0;
-        left: auto;
-        width: auto;
-        max-width: 100%;
-        margin:100px 10px auto auto;
-    }
-
-    .ContactForm button{
-        margin:auto auto 40px 30% ;
-        bottom: 0;
-        right: 0;
-        font-size:30px;
-        font-weight:50;
-    }
 
 
     footer{
-        padding: 10px 5% 10px 8%;
-
-        max-width: 100%;
-        text-align: center;
-        margin: auto;
-        max-height: 60vh;
-        width: auto;
-        right: 1px;
-        left: 1px;
-        bottom: auto;
+     height: auto;
         /*border: 2px solid #6f0c72;*/
     }
 
-    footer .footer-socialLinks{
-        position: relative;
-        bottom: 30px;
-        margin: auto;
-    }
-
-    footer .copyrights p{
-        margin: 20px auto auto auto;
-        top: 0;
-    }
-    footer p{
-       width: 80%;
-        margin: auto;
-        top: 0;
-        bottom: 0   ;
-    }
-
-    .footer-socialLinks{
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly ;
-        margin: auto ;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        left: 0;
-    }
-
-    .pfooter{
-        display: flex;
-        bottom: 0;
-    }
-
-
-
-
 
 }
 
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1024px) {
 
 
-
-    .navigation a{
+    .navigation a {
         font-size: 16px;
     }
 
-    .logo{
-        font-size: 18px;
+    .logo {
+        font-size: 16px;
         font-weight: 600;
     }
 
-header{
-    padding: 10px 2% 10px 5%;
+    header {
+        padding: 10px 2% 10px 5%;
 
-}
+    }
 
-    .Home{
+    .Home {
         padding: 10px 2% 10px 5%;
     }
 
-    .hContent h1{
+    .hContent h1 {
         font-size: 40px;
     }
 
 
-    .hContent h3{
+    .hContent h3 {
         font-size: 25px;
     }
 
-    .hContent p{
+    .hContent p {
         font-size: 15px;
-        max-width:50%;
         width: auto;
     }
 
     .hContent .image {
         width: 420px;
-        height: 80vh;
     }
 
 
-
-    .resumebutton button{
+    .resumebutton button {
         font-size: 12px;
         font-weight: 500;
-        margin: auto auto 50px auto;
     }
 
 
-
-        .social-media a{
-            width:35px ;
-            height: 35px;
-        }
-        .social-media i{
-            left: 8px;
-            top:  8px;
-            font-size: 20px;
-        }
-
-        .social-media{
-            position: relative;
-          margin: auto auto 60px 1px;
-        }
-
-
-
-    .About-section{
+    .About-section {
         padding: 10px 2% 10px 5%;
     }
 
-    .about-title{
+    .about-title {
         font-size: 30px;
     }
 
-    .about-para{
+    .about-para {
         font-size: 15px;
     }
 
-    .sub-title{
+    .sub-title {
         font-size: 25px;
     }
-    .my-detailabout{
+
+    .my-detailabout {
         font-size: 14px;
     }
 
-    .project-section{
-        padding: 10px 2% 10px 5%;
-    }
-    .project-section .title{
-        font-size: 30px;
-    }
-
-    /*.project-section .cards{*/
-    /*}*/
-
-    .project-section .card1{
-        height: 200px;
-        border-radius: 10px;
-        border-width:6px 2px 6px 2px;
-        width: 150px;
-
-
-    }
-
-    .project-section .card2{
-        height: 200px;
-        border-radius: 10px;
-        border-width:6px 2px 6px 2px;
-        width: 150px;
-        margin-left: 40px;
-
-    }
-
-    .project-section .card3{
-        height: 200px;
-        border-radius: 10px;
-        border-width:6px 2px 6px 2px;
-        width: 150px;
-        margin-left: 40px;
-
-    }
-
-    .project-section .morebtn{
-        width: 200px;
-        height:60px;
-    }
-
-
-
-
-    .skills-section{
-        height: auto;
-        padding: 10px 2% 10px 5%;
-        width: auto;
-        max-width: 100%;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        margin: auto;
-    }
-
-    .skills-section .title{
-        font-size: 30px;
-        width: auto;
-        height: auto;
-    }
-
-
-
-    .skill-set{
-        height: auto;
-        max-width: 100%;
-        width: auto;
-        font-size: 20px;
-    }
-
-
-
-
-    .education-section{
+    .project-section {
         padding: 10px 2% 10px 5%;
     }
 
-    .education-title{
-        font-size: 30px;
-        font-weight: 500;
-
-    }
-
-    .timeline{
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        margin: 100px auto;
-    }
-
-    .service-section{
-        padding: 10px 2% 10px 5%;
-    }
-    .service-title {
-        font-size: 30px;
-        font-weight: 300;
-    }
-
-    .cards-services{
-        margin: auto 10% auto auto;
-    }
-
-    .cards-services .card-1{
-        margin-top: 40px;
-        width: 250px;
-        height: 300px;
-    }
-    .card-1 p{
-        padding: 10px;
-        text-transform: capitalize;
-        font-size: 15px;
-
-    }
-
-    .card-1 .webDevelopment-title{
-        top: 20px;
-        margin:auto auto 40px auto;
-    }
-
-    .cards-services .card-2{
-        margin-top: 40px;
-        width: 250px;
-        height: 300px;
-        margin-left: 10px;
-
-    }
-
-
-
-    .card-2 p{
-        padding: 10px;
-        font-size: 15px;
-        text-transform: capitalize;
-    }
-
-    .cards-services .card-3{
-        margin-top: 40px;
-        width: 250px;
-        height: 300px;
-        margin-left: 10px;
-
-    }
-
-    .card-3 .title{
-        text-align: center;
-        margin-bottom: 40px;
-    }
-
-    .card-3 p{
-        padding: 10px;
-        font-size: 15px;
-        text-transform: capitalize;
-    }
-
-    .Gallery-section{
-        padding: 10px 2% 10px 5%;
-    }
-    .Gallery-section .Gallery-title{
+    .project-section .title {
         font-size: 30px;
     }
 
 
-    .Gallery-section .photos img{
-        width: 200px;
-        border: #081b29 solid 2px;
-    }
-
-    .lastphoto1{
-        height: 270px;
-    }
-
-    .contacts-section{
-        padding: 10px 2% 10px 5%;
+    .project-section .cards {
 
     }
 
-    .contacts-section .contact-title{
-        font-size: 30px;
-        font-weight: 300;
-    }
+
+        .skills-section{
+            padding: 10px 2% 10px 5%;
+        }
+        .skills-section .title{
+            font-size: 30px;
+            width: auto;
+            height: auto;
+        }
+        .skill-set{
+            height: auto;
+            max-width: 100%;
+            width: auto;
+            font-size: 20px;
+        }
+        .education-section{
+            padding: 10px 2% 10px 5%;
+        }
+        .education-title{
+            font-size: 30px;
+            font-weight: 500;
+        }
+        .timeline{
+            margin-bottom: 50px;
+            /*margin: 100px auto;*/
+        }
+        .service-section{
+            padding: 10px 2% 10px 5%;
+        }
+        .service-title {
+            font-size: 30px;
+            font-weight: 300;
+        }
+        .cards-services{
+            margin: auto 10% auto auto;
+        }
+        .scards p{
+            font-size: 15px;
+        }
 
 
-    .contact-content  a{
-        font-size: 15px;
-    }
 
 
 
+        .Gallery-section{
+            padding: 10px 2% 10px 5%;
+        }
+        .Gallery-section .Gallery-title{
+            font-size: 30px;
+        }
+        .Gallery-section .photos img{
+            width: 200px;
+        }
+        .lastphoto1{
+            height: 270px;
+        }
 
-
-    form input{
-        background:linear-gradient(rgba(37, 103, 144, 1),rgba(39, 106, 148, 1)) ;
-        box-sizing: border-box;
-        width: 300px;
-        height: 20px;
-        font-size: 16px;
-        border-radius: 8px;
-        font-weight: bold;
-        color:greenyellow;
-        border: 2px solid #90bef8;
-        box-shadow: 2px 4px 15px rgba(105, 250, 224, 0.92);
-
-
-    }
-
-    form textarea{
-        background:linear-gradient(rgba(37, 103, 144, 1),rgba(39, 106, 148, 1)) ;
-        box-sizing: border-box;
-        width: 300px;
-        font-size: 20px;
-        color:greenyellow;
-        border-radius: 10px;
-        font-weight: bold;
-        border: 2px solid #90bef8;
-        box-shadow: 2px 4px 15px rgba(105, 250, 224, 0.92);
-    }
-
-    .ContactForm button{
-        font-size:20px;
-        width: 100px;
-        height: 50px;
-        border-radius: 10px;
-        font-weight:50;
-    }
 
 footer{
     padding: 10px 2% 10px 5%;
-    max-width: 100%;
-    text-align: center;
-    margin: auto;
-    width: auto;
 }
 
+}
+
+
+@media  screen and (max-width: 900px) {
+.education-section .timeline{
+    max-width: 350px;
+    height: auto;
+}
 }
 
 
@@ -734,28 +379,12 @@ footer{
 
     .logo{
         font-size: 20px;
-        text-decoration: none;
-        font-weight: 500;
-        animation: fadeIn 4s infinite alternate;
     }
 
-    @keyframes fadeIn {
-        0% {
-            scale: 50%;
-            opacity: .2;
-            transform: translateY(-10px);
-            color: rgba(110, 175, 251, 1);
-        }
-        100% {
-            opacity: 1;
-            transform: translateY(0);
-            color: white;
-        }
-    }
+
 
     .navigation a{
         font-size: 12px;
-        font-weight: 500;
         margin-left: 10px;
     }
 
@@ -765,17 +394,6 @@ footer{
 
         }
 
-    .hContent .image {
-        left: 0;
-        right: 0;
-        bottom: 140px;
-        margin: auto;
-        width: 350px;
-        height: 80vh;
-        outline: 30px solid #021925;
-        outline-offset: -20px;
-
-    }
 
 
     .About-section{
@@ -808,60 +426,76 @@ footer{
         padding: 0 0 0 5%;
     }
 
-    .cards-services{
-        margin-left: auto;
-        margin-right:auto;
-    }
 
-    .cards-services .card-1{
+
+     .scards{
         width: 200px;
     }
 
 
 
-    .cards-services .card-2{
-        width: 200px;
-    }
 
-    .card-2 p{
-        position: relative;
-        bottom: 15px;
+
+    .scards p {
+        font-size: 12px;
     }
 
 
-    .cards-services .card-3{
-        width: 200px;
-    }
 
 
     .Gallery-section{
         padding: 0 0 0 5%;
     }
 
-    .Gallery-section .photos {
-    }
 
 
     .Gallery-section .photos img{
         width: 180px;
         border: #081b29 solid 2px;
     }
+
     .lastphoto1{
         height: 240px;
     }
-    .contacts-section{
-        padding: 0 0 0 5%;
+
+    .contact-content {
+        flex-direction: column;
+        align-items: center;
     }
+
+    .ContactForm {
+        width: 100%;
+    }
+
+    .contact-links {
+        align-items: center;
+    }
+
 
     footer{
         padding: 0 0 0 5%;
-        max-width: 100%;
     }
 
 
 
 
 
+
+}
+
+@media screen and (max-width: 715px) {
+
+  .hContent image{
+      position: absolute;
+z-index: -1;
+  }
+   .hContent img{
+       z-index: -1;
+   }
+
+    .hContent p{
+        z-index: 300;
+    }
 
 }
 
@@ -918,48 +552,34 @@ footer{
 
 
     .Home{
-        position: relative;
-        padding: 0 2% 0 2%;
-        margin: auto;
-        max-width: 426px;
-        width: auto;
+        padding: 3% 2% 5% 2%;
     }
 
 
     .hContent{
-        position: relative;
         text-align: center;
         top: 0;
-        width:auto ;
-        height: auto;
-        padding: 0;
 
     }
 
     .hContent .image{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        background: #56eaef;
-        right: 0;
-        padding: 3px;
-        max-width: 100%;
-        width:auto;
-        left: 9%;
-        margin-right: unset;
-        margin-left: unset;
-        z-index: 0;
-        bottom: 0;
+position: absolute;
+        top: 0;
+        bottom: 100px;
+        width: 100%;
+        margin: 0;
+        right: 20%;
+        height: auto;
     }
 
     .image img {
         width:100%;
         height: 100%;
+        margin: 0;
     }
 
     .hContent h1{
-        margin: auto auto auto auto;
+        margin: 340px auto auto auto;
         font-size:35px ;
         letter-spacing: .3px;
     }
@@ -1031,11 +651,10 @@ footer{
     }
 
     .About-section {
-        padding: 0 2% 0 2%;
+        padding: 3% 2% 5% 2%;
     }
 
     .about-title{
-        padding: 0;
         margin: 50px auto;
         position: relative;
         max-width: 100%;
@@ -1049,13 +668,8 @@ footer{
     }
 
     .about-para{
-        position: relative;
-        top: 0;
-        bottom: 0;
-        margin: auto;
-        width: auto;
         max-width: 100%;
-        height: auto;
+        width: auto;
     }
 
     .about-para p{
@@ -1063,11 +677,10 @@ footer{
     }
 
     .my-detailabout{
-        position: relative;
-        top: 0;
         display: flex;
         flex-direction: column;
-        width:80vw;
+        max-width:80vw;
+        width: auto;
         margin:80px auto auto 1px;
         letter-spacing: .8px;
         height: auto;
@@ -1075,99 +688,64 @@ footer{
     }
 
     .my-detailabout p{
-        position: relative;
         max-width: 100%;
         width: auto;
-        padding: 0;
         margin: auto auto 40px 0;
     }
 
     .project-section{
-        padding: 0 2% 0 2%;
-
+        padding: 3% 2% 5% 2%;
     }
 
     .project-section .title{
-        font-size: 30px;
-        margin: 20px auto 70px auto;
+        font-size: 20px;
+        margin:50px auto;
     }
 
-    .project-section .card2{
-        margin-left: 0;
 
-    }
-
-    .project-section .card3{
-        margin-left: 0;
-
-    }
 
     .project-section .morebtn{
-        margin: 100px auto 50px auto;
+        margin: auto;
+        position: relative;
+        top: 3px;
+        left: 2%;
     }
     .skills-section{
-        padding: 0 2% 0 2%;
+        padding: 3% 2% 5% 2%;
 
     }
 
     .skills-section .title{
         margin: 10% auto 10% auto;
-        width: auto;
-        height: auto;
+        font-size: 20px;
     }
 
     #Skills{
-        font-size: 30px;
-        font-weight: 500;
+        font-size: 20px;
 
     }
     .skillSub-content{
 
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 10px;
-        padding: 0;
-        left: 0;
-        right: 0;
-        margin:100px 10% 50px auto;
-        width: auto;
-        height: auto;
-        max-width: 100%;
     }
 
     .skillSub-content div{
-       margin: auto;
-        width: auto;
-        height: auto;
+
     }
 
     .skill-set{
-        height: auto;
-        max-width: 100%;
-        width: auto;
-        font-size: 18px;
-        letter-spacing: .4px;
-        line-height: 40px;
+
     }
 
     .education-section{
-        top: 0;
-        bottom: 0;
-        margin: auto;
-        max-width: 100%;
-        height: auto;
-        width: auto;
-        padding: 0 2% 0 2%;
-
+        padding: 3% 2% 5% 2%;
     }
 
     .education-title{
         padding: 0;
         width: auto;
         max-width: 100%;
-        margin: 30% auto 20% auto;
-        font-size: 30px;
+        margin: 20% auto auto auto;
+        font-size: 20px;
         font-weight: 500;
     }
 
@@ -1218,32 +796,15 @@ footer{
         font-weight: 500;
         width: auto;
         height: auto;
-        margin:30%  auto auto auto;
+        margin:30%  auto 30% auto;
     }
     .cards-services{
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 0;
-        padding: 0;
+        right: 0;
         left: 0;
-        margin:100px auto 50px auto;
-        width: auto;
-        height: auto;
-        max-width: 100%;
-    }
-    .cards-services .card-1{
-        margin-left: 20px;
-      margin-bottom: 20px;
+        margin: auto;
+
     }
 
-    .cards-services .card-2{
-        margin-bottom: 20px;
-    }
-
-    .cards-services .card-3{
-        margin-bottom: 20px;
-    }
 
     .Gallery-section{
         padding: 0 2% 0 2%;
@@ -1267,75 +828,6 @@ footer{
         border: #081b29 solid 2px;
     }
 
-    .contacts-section{
-        padding: 0 2% 0 2%;
-
-    }
-
-    .contacts-section .contact-title{
-        margin: 10% auto 40% auto;
-        width: auto;
-        height: auto;
-
-    }
-    .contact-content{
-        height: auto;
-        margin: auto auto 20% auto;
-        width: auto;
-        max-width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        top: 0;
-        position: relative;
-    }
-
- .contact-links{
-     position: relative;
-     top: 300px;
- }
-
-    .contact-links #MailLink img {
-        position: relative;
-        bottom: 8px;
-
-    }
-    .ContactForm{
-        position: relative;
-        top: auto;
-        left: 0;
-        bottom: 100px;
-        margin: auto;
-        width: auto;
-        max-width: 100%;
-
-
-    }
-    .ContactForm button{
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        top:100px;
-        right: 0;
-        bottom: 0;
-        margin: auto;
-    }
-    .contact-links{
-        max-width: 100%;
-        display: flex;
-        gap: 10px;
-        flex-wrap: wrap;
-        margin: auto;
-        width:auto;
-        height: auto;
-        /*border: 2px solid lightseagreen;*/
-        /*justify-content: space-between;*/
-        /*align-content: space-between;*/
-        /*align-items: ;*/
-        justify-content: space-between; /* Distributes space evenly between items */
-        align-items: center; /* Aligns items vertically in the center */
-
-    }
 
 
 
@@ -1396,5 +888,146 @@ footer{
 
     .timeline-content p{
         width: auto;
+    }
+}
+
+@media screen and (max-width: 376px){
+
+    .hContent h1{
+        margin: 300px auto auto auto;
+        overflow: hidden;
+        font-size: 20px;
+        width: auto;
+    }
+
+
+    .hContent h3{
+        font-size: 15px;
+        margin: 4px auto;
+    }
+
+    .hContent p{
+        margin: auto;
+        font-size: 10px;
+    }
+
+    .hContent .image{
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom:230px;
+        margin: auto;
+        height: 60vh;
+    }
+
+    .social-media{
+        max-width: 50%;
+        width: auto;
+        display: flex;
+        align-content: space-between;
+        gap: 5px;
+        justify-content: start;
+    }
+
+
+    .about-title{
+        font-size: 16px;
+        margin: 10px auto;
+    }
+
+    .about-para{
+        max-width: 90%;
+        font-size: 12px;
+
+    }
+
+    .sub-title{
+        margin-bottom: 8px;
+    }
+
+    .my-detailabout{
+        font-size: 13px;
+
+    }
+    .my-detailabout p{
+        width: 100%;
+    }
+
+    .project-section .title{
+        font-size: 20px;
+    }
+
+    .project-section .morebtn{
+        min-width: 100px;
+        height:40px;
+    }
+
+    .morebtn span{
+        width: 30px;
+        height: 30px;
+    }
+
+    .skills-section .title{
+        font-size: 20px;
+    }
+
+    .skill-set{
+        font-size: 12px;
+    }
+
+    .education-title{
+        font-size: 20px;
+    }
+
+    .timeline{
+        position: relative;
+        left:12%;
+        width: 200px;
+    }
+
+    .timeline-item h3 {
+        font-size:10px;
+    }
+
+    .timeline p{
+        margin: auto;
+        font-size: 12px;
+    }
+
+    .service-title{
+        font-size: 20px;
+    }
+
+    .scards p{
+        font-size: 12px;
+    }
+
+    .Gallery-section .Gallery-title{
+        font-size: 20px;
+    }
+
+    .Gallery-section .photos img{
+        width: 150px;
+    }
+
+    .lastphoto1{
+        height: 200px;
+    }
+
+
+    footer{
+        padding: 0 2% 0 2%;
+    }
+
+.pfooter{
+    margin: 30px auto;
+    font-size: 12px;
+}
+
+    .footer-socialLinks{
+        gap: 5px;
+}
+    .copyrights p{
+        font-size: 12px;
     }
 }
