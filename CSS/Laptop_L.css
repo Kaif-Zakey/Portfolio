@@ -69,52 +69,52 @@
 
     }
 
-    .About-section{
-        /*border: 2px solid greenyellow;*/
-        height: auto;
-        margin:  auto;
-        padding: 10px 5% 10px 8%;
-        width: auto;
-        max-width: 100%;
+    /*.About-section{*/
+    /*    !*border: 2px solid greenyellow;*!*/
+    /*    height: auto;*/
+    /*    margin:  auto;*/
+    /*    padding: 10px 5% 10px 8%;*/
+    /*    width: auto;*/
+    /*    max-width: 100%;*/
 
-    }
+    /*}*/
 
-    .about-title{
-        margin: 100px auto 50px 1px;
-        font-size: 55px;
-        width: auto;
-        max-width: 100%;
-    }
+    /*.about-title{*/
+    /*    margin: 100px auto 50px 1px;*/
+    /*    font-size: 55px;*/
+    /*    width: auto;*/
+    /*    max-width: 100%;*/
+    /*}*/
 
-    .sub-title{
-        font-size: 30px;
-        top: 50px;
-        margin-bottom: 40px;
-    }
-    .about-para{
-        font-size: 20px;
-        top: 50px;
-        max-width: 60vw;
-        width: auto;
-        height: auto;
-    }
-
-
-    .my-detailabout{
-        font-size: 20px;
-        font-weight: bolder;
-        margin:150px auto 10px 2px;
-        height: auto;
-        top: 0;
-    }
+    /*.sub-title{*/
+    /*    font-size: 30px;*/
+    /*    top: 50px;*/
+    /*    margin-bottom: 40px;*/
+    /*}*/
+    /*.about-para{*/
+    /*    font-size: 20px;*/
+    /*    top: 50px;*/
+    /*    max-width: 60vw;*/
+    /*    width: auto;*/
+    /*    height: auto;*/
+    /*}*/
 
 
-    .my-detailabout p{
-        margin-bottom: 30px;
-        margin-right:auto ;
-        margin-left:auto;
-        width: 40vw;
-    }
+    /*.my-detailabout{*/
+    /*    font-size: 20px;*/
+    /*    font-weight: bolder;*/
+    /*    margin:150px auto 10px 2px;*/
+    /*    height: auto;*/
+    /*    top: 0;*/
+    /*}*/
+
+
+    /*.my-detailabout p{*/
+    /*    margin-bottom: 30px;*/
+    /*    margin-right:auto ;*/
+    /*    margin-left:auto;*/
+    /*    width: 40vw;*/
+    /*}*/
 
 
     .project-section{
@@ -128,13 +128,7 @@
         margin: 100px auto 20px 1px;
     }
 
-    /*.project-section .cards {*/
-    /*    display: flex;*/
-    /*    justify-content: center;*/
-    /*    flex-wrap: wrap;*/
-    /*    margin:40px auto auto auto;*/
-    /*    top: 0;*/
-    /*}*/
+
 
 
 
@@ -263,25 +257,25 @@
     }
 
 
-    .About-section {
-        padding: 10px 2% 10px 5%;
-    }
+    /*.About-section {*/
+    /*    padding: 10px 2% 10px 5%;*/
+    /*}*/
 
-    .about-title {
-        font-size: 30px;
-    }
+    /*.about-title {*/
+    /*    font-size: 30px;*/
+    /*}*/
 
-    .about-para {
-        font-size: 15px;
-    }
+    /*.about-para {*/
+    /*    font-size: 15px;*/
+    /*}*/
 
-    .sub-title {
-        font-size: 25px;
-    }
+    /*.sub-title {*/
+    /*    font-size: 25px;*/
+    /*}*/
 
-    .my-detailabout {
-        font-size: 14px;
-    }
+    /*.my-detailabout {*/
+    /*    font-size: 14px;*/
+    /*}*/
 
     .project-section {
         padding: 10px 2% 10px 5%;
@@ -654,48 +648,48 @@ position: absolute;
 
     }
 
-    .About-section {
-        padding: 3% 2% 5% 2%;
-    }
+    /*.About-section {*/
+    /*    padding: 3% 2% 5% 2%;*/
+    /*}*/
 
-    .about-title{
-        margin: 50px auto;
-        position: relative;
-        max-width: 100%;
-        width: auto;
-        font-size: 20px;
-    }
+    /*.about-title{*/
+    /*    margin: 50px auto;*/
+    /*    position: relative;*/
+    /*    max-width: 100%;*/
+    /*    width: auto;*/
+    /*    font-size: 20px;*/
+    /*}*/
 
-    .sub-title{
-        position: relative;
-        margin: auto auto 100px auto;
-    }
+    /*.sub-title{*/
+    /*    position: relative;*/
+    /*    margin: auto auto 100px auto;*/
+    /*}*/
 
-    .about-para{
-        max-width: 100%;
-        width: auto;
-    }
+    /*.about-para{*/
+    /*    max-width: 100%;*/
+    /*    width: auto;*/
+    /*}*/
 
-    .about-para p{
-        margin-bottom: 30px;
-    }
+    /*.about-para p{*/
+    /*    margin-bottom: 30px;*/
+    /*}*/
 
-    .my-detailabout{
-        display: flex;
-        flex-direction: column;
-        max-width:80vw;
-        width: auto;
-        margin:80px auto auto 1px;
-        letter-spacing: .8px;
-        height: auto;
-        padding: 0;
-    }
+    /*.my-detailabout{*/
+    /*    display: flex;*/
+    /*    flex-direction: column;*/
+    /*    max-width:80vw;*/
+    /*    width: auto;*/
+    /*    margin:80px auto auto 1px;*/
+    /*    letter-spacing: .8px;*/
+    /*    height: auto;*/
+    /*    padding: 0;*/
+    /*}*/
 
-    .my-detailabout p{
-        max-width: 100%;
-        width: auto;
-        margin: auto auto 40px 0;
-    }
+    /*.my-detailabout p{*/
+    /*    max-width: 100%;*/
+    /*    width: auto;*/
+    /*    margin: auto auto 40px 0;*/
+    /*}*/
 
     .project-section{
         padding: 3% 2% 5% 2%;
@@ -939,20 +933,20 @@ position: absolute;
     }
 
 
-    .about-title{
-        font-size: 16px;
-        margin: 10px auto;
-    }
+    /*.about-title{*/
+    /*    font-size: 16px;*/
+    /*    margin: 10px auto;*/
+    /*}*/
 
-    .about-para{
-        max-width: 90%;
-        font-size: 12px;
+    /*.about-para{*/
+    /*    max-width: 90%;*/
+    /*    font-size: 12px;*/
 
-    }
+    /*}*/
 
-    .sub-title{
-        margin-bottom: 8px;
-    }
+    /*.sub-title{*/
+    /*    margin-bottom: 8px;*/
+    /*}*/
 
     /*.skillSub-content img{*/
     /*    width: 30px;*/
@@ -962,13 +956,13 @@ position: absolute;
     /*    object-fit: cover;*/
     /*}*/
 
-    .my-detailabout{
-        font-size: 13px;
+    /*.my-detailabout{*/
+    /*    font-size: 13px;*/
 
-    }
-    .my-detailabout p{
-        width: 100%;
-    }
+    /*}*/
+    /*.my-detailabout p{*/
+    /*    width: 100%;*/
+    /*}*/
 
     .project-section .title{
         font-size: 20px;

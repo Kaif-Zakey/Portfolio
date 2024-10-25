@@ -306,47 +306,197 @@ header {
 }
 
 
-.about-title{
-
-    font-size: 40px;
-    font-weight: 500;
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 50px 0;
 }
 
-.about-para{
-    position: relative;
-    top: 30px;
-    width: auto;
-    max-width: 60vw;
-
-    height: auto;
-
-}
-
-.sub-title{
-    position: relative;
-    top: 30px;
-    margin-bottom: 40px;
-}
-
-.my-detailabout{
-    position: relative;
-    top: 0;
+/* About Section */
+.about-section {
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    background-color: #0F172A;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.profile-photo img {
+    width: 200px;
+    height: 250px;
+    border-radius: 10px;
+    object-fit: cover;
+    filter: grayscale(100%);
+}
+
+.info {
+    margin-left: 40px;
+    flex: 1;
+}
+
+.About-section h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #00E0FF;
+}
+
+.About-section h1 span {
+    color: #fff;
+}
+
+.details {
+    display: flex;
     flex-wrap: wrap;
-    width:80vw;
-    margin:150px auto 10px 2px;
-    letter-spacing: .8px;
-    height: auto;
-
+    margin-bottom: 20px;
 }
 
-.my-detailabout p{
-    margin-bottom: 30px;
-    margin-right:auto ;
-    margin-left:auto;
-    width: 40vw;
+.details p {
+    width: 50%;
+    margin-bottom: 10px;
 }
+
+.description {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Mission and Vision Section */
+.mission-vision {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.mission, .vision {
+    background-color: #0F172A;
+    padding: 20px;
+    border-radius: 10px;
+    width: 48%;
+}
+
+.mission h2, .vision h2 {
+    font-size: 1.5rem;
+    color: #00E0FF;
+    margin-bottom: 10px;
+}
+
+.mission p, .vision p {
+    font-size: 1.1rem;
+    color: #C4C4C4;
+    line-height: 1.6;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 30px 0;
+    }
+
+    .about-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-photo img {
+        width: 200px;
+        height: 200px;
+        margin-bottom: 20px;
+    }
+
+    .info {
+        margin-left: 0;
+    }
+
+   .About-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .details p {
+        width: 100%;
+    }
+
+    .mission-vision {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .mission, .vision {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+   .About-section h1 {
+        font-size: 2rem;
+    }
+
+    .profile-photo img {
+        width: 100px;
+        height: 150px;
+    }
+
+    .details p {
+        font-size: 0.9rem;
+    }
+
+    .mission h2, .vision h2 {
+        font-size: 1.3rem;
+    }
+
+    .mission p, .vision p {
+        font-size: 1rem;
+    }
+}
+
+
+
+
+
+
+
+
+/*.about-title{*/
+
+/*    font-size: 40px;*/
+/*    font-weight: 500;*/
+/*}*/
+
+/*.about-para{*/
+/*    position: relative;*/
+/*    top: 30px;*/
+/*    width: auto;*/
+/*    max-width: 60vw;*/
+
+/*    height: auto;*/
+
+/*}*/
+
+/*.sub-title{*/
+/*    position: relative;*/
+/*    top: 30px;*/
+/*    margin-bottom: 40px;*/
+/*}*/
+
+/*.my-detailabout{*/
+/*    position: relative;*/
+/*    top: 0;*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*    flex-wrap: wrap;*/
+/*    width:80vw;*/
+/*    margin:150px auto 10px 2px;*/
+/*    letter-spacing: .8px;*/
+/*    height: auto;*/
+
+/*}*/
+
+/*.my-detailabout p{*/
+/*    margin-bottom: 30px;*/
+/*    margin-right:auto ;*/
+/*    margin-left:auto;*/
+/*    width: 40vw;*/
+/*}*/
 
 
 .project-section{
