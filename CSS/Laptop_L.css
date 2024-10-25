@@ -857,7 +857,14 @@ position: absolute;
         font-size:40px ;
     }
 
+footer a{
+    width: 10px;
+height: 10px
+}
 
+footer i{
+    font-size: 15px;
+}
 
 
 }
