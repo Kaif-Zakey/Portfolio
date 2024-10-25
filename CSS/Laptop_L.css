@@ -736,6 +736,10 @@ position: absolute;
     /*    object-fit: cover;*/
     /*}*/
 
+    .skills-section .skillSub-content{
+        margin: auto auto auto 40%;
+    }
+
     .education-section{
         padding: 3% 2% 5% 2%;
     }
@@ -852,6 +856,11 @@ position: absolute;
         padding: 0 2% 0 2%;
 
         width: 100%;
+    }
+
+    .contacts-section .contact-title{
+        margin: auto;
+        font-size:40px ;
     }
 
 
@@ -1039,4 +1048,32 @@ position: absolute;
     .copyrights p{
         font-size: 12px;
     }
+}
+
+@media screen and   (max-width: 391px){
+
+.hContent .image{
+    bottom: 300px;
+    height: 50vh;
+}
+
+    .hContent h1{
+        margin: 200px auto auto auto;
+        font-size: 35px;
+    }
+
+    .hContent h3{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+   .skill-set{
+        font-size: 15px;
+    }
+
+   .timeline{
+       margin-left: 25%;
+   }
+
+
 }

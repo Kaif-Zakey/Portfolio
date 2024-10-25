@@ -384,6 +384,7 @@ header {
     min-height: 100vh;
     flex-wrap: wrap;
     width: 100%;
+    margin-bottom: 60px;
 
 
 }
@@ -403,7 +404,7 @@ header {
     width: 150px;
     position: relative;
     cursor: pointer;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
 }
 
 .project-section button{
@@ -815,16 +816,14 @@ header {
 }
 
 .contacts-section {
-    padding: 60px 20px;
+    padding: 8% 8% 0 10%;
     background: #003244;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    max-width: 1200px;
     margin: 0 auto;
 }
 
 .contact-title h2 {
-    text-align: center;
     font-size: 3rem;
     font-weight: 600;
     color: #f8f5f5;
@@ -832,15 +831,7 @@ header {
     position: relative;
 }
 
-.contact-title h2::after {
-    content: '';
-    display: block;
-    width: 80px;
-    height: 4px;
-    background-color: #007bff;
-    margin: 10px auto 0;
-    border-radius: 2px;
-}
+
 
 .contact-content {
     display: flex;
@@ -859,18 +850,31 @@ header {
 }
 
 .contact-links div {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    padding: 10px 20px;
-    background-color: #4d93ea;
+    /*display: flex;*/
+    /*flex-direction: row;*/
+    /*gap: 12px;*/
+    display: inline-flex;
+    padding: 10px 10px;
+    background-color: #003244;
     border-radius: 10px;
-    transition: background-color 0.3s, transform 0.3s;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
 }
 
+.contact-links div a{
+    display: flex;
+    justify-content: center;
+    color: #e6f6fa;
+
+}
+
+.contact-links div a p{
+    margin: auto;
+}
+
+
 .contact-links div:hover {
-    background-color: #87ffd8;
+    background-color: #021925;
     color: #ffffff;
     transform: translateY(-5px);
 }
@@ -878,10 +882,11 @@ header {
 .contact-links img {
     width: 30px;
     height: 30px;
+    margin-right: 10px;
 }
 
 .contact-links p {
-    font-size: 1.2rem;
+    font-size: 15px;
     margin: 0;
 }
 
@@ -924,19 +929,20 @@ header {
 
 .ContactForm button {
     padding: 15px 30px;
-    background-color: #007bff;
-    color: #003244;
-    border: none;
+    background-color: transparent;
+    color: #e3ecef;
     border-radius: 10px;
     cursor: pointer;
     font-size: 1.2rem;
     font-weight: 600;
+    border: 2px solid #8ff0fd; ;
     transition: background-color 0.3s, transform 0.3s;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    margin-bottom: 20px;
 }
 
 .ContactForm button:hover {
-    background-color: #0056b3;
+    background-color: rgba(135, 255, 216, 0.49);
     transform: translateY(-3px);
 }
 
@@ -954,7 +960,7 @@ footer{
     align-items: center;
     /*line-height: 40px;*/
     font-size: 25px;
-    background:linear-gradient(to right, rgb(7, 55, 80), rgb(7, 55, 80));
+    background:linear-gradient(to right, rgb(2, 25, 37), rgb(0, 50, 68));
 }
 .pfooter{
     /*width: auto;*/
@@ -986,6 +992,7 @@ footer{
 
 .copyrights p{
     color: #56eaef;
+    font-size: 15px;
     margin: 10px auto 10px auto;
 }
 
