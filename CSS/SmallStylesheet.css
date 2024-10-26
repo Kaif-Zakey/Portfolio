@@ -529,174 +529,308 @@ font-style: normal;
 /*}*/
 
 
+
+
+
+
 .project-section{
-    margin: auto;
     background: #021925;
     position: relative;
     min-height: 100vh;
     height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
     padding: 8% 0 0 10%;
     letter-spacing: normal;
-    width: 100%;
+    font-family: 'Arial', sans-serif;
 }
 
-.project-section .title{
-    top: 30px;
-    margin-bottom: 40px;
-    font-size: 40px;
-    font-weight: 500;
+.title{
+    max-width: 100%;
+    margin: auto;
 }
 
-.project-section .cards{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    position: relative;
-    justify-content: center;
+.title h2 {
+    font-size: 2.5rem;
+    color: #ecf3f2;
+    margin: 30px auto 80px auto;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Cards Container */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
     justify-items: center;
-    align-content: center;
-    /*width:auto;*/
-    gap: 10rem;
-    overflow: hidden;
-    min-height: 100vh;
-    flex-wrap: wrap;
-    width: 100%;
-    margin-bottom: 60px;
-
-
 }
 
-
-.project-section .card{
-    /*margin-right: 50px;*/
-    background: transparent;
-    min-height: 200px;
-    border-radius: 4px;
+/* Card Styling */
+.card {
+    background-color: rgba(42, 64, 86, 0.96);
+    width: 250px;
+    height: 200px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    border-color: dodgerblue;
-    border-width:6px 3px 6px 3px;
-    border-style: solid;
-    width: 150px;
-    position: relative;
-    cursor: pointer;
-    margin-bottom: 10px;
+    justify-content: space-between;
 }
 
-.project-section button{
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card h4 {
+    text-align: center;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    color: #e6eaef;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Button Styling */
+.card button {
     background: transparent;
-    position: absolute;
-    top: 20px;
-    width: 60px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    aspect-ratio: 1/1;
-    border-radius: 100%;
+    border: 2px solid #4989d7;
+    padding: 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-block;
 }
 
-.project-section button:hover{
-    background: #56eaef;
-    color: #021925;
+.card button:hover {
+    background-color: #4989d7;
+    border-color: #4989d7;
+    transform: scale(1.1);
 }
 
-
-.project-section i{
-    font-size: 60px;
-    color: #387bc9;
-}
-
-.project-section .morebtn{
-    position: absolute;
-    bottom: 50px;
-    right: 40px;
-    min-width: 200px;
-    /*width: 200px;*/
-    /*margin-right: 300px;*/
-    height:60px;
-    background: #021925;
-    border-radius: 60PX;
-    display: flex;
-    justify-content:center ;
-    align-items: center;
-    color:white;
+.card button a {
+    color: #4989d7;
+    font-size: 1.2rem;
     text-decoration: none;
-    letter-spacing: 2px;
-    border-top:0.6px solid #073750;
-    border-left:0.6px solid #073750;
-    border-bottom:0.1px solid #073750;
-    border-right:0.1px solid #073750;
-    padding-left: 40px;
-    transition: 0.5s;
-    overflow: hidden;
 }
 
-.project-section .morebtn:hover{
-    padding-left:0 ;
-    padding-right: 40px;
-    color: #56eaef;
+.card button:hover a {
+    color: #0a3b4d;
 }
 
-.morebtn span{
-    position: absolute;
-    left: 5px;
-    width: 50px;
-    height: 50px;
-    background: #387bc9;
-    border-radius: 50%;
-    transition: 0.5s ease-in-out;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: black;
-    font-size: 1.5em;
+.morebtnclass{
+    max-width: 100%;
+    text-align: center;
 }
 
-.morebtn i{
-    font-size: 30px;
-    color: black;
+/* More Button Styling */
+.morebtn {
+    display: inline-block;
+    margin-top: 100px;
+    text-align: center;
+    margin-bottom: 60px;
+    padding: 10px 20px;
+    color: #0a3b4d;
+    background-color: #4989d7;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+    font-family: 'Montserrat', sans-serif;
 }
 
-.morebtn:hover span{
-    left: calc(100% - 55px);
-    background: #56eaef;
+.morebtn:hover {
+    background-color: #7cb2d3;
+    transform: translateY(-5px);
 }
 
-.morebtn:after{
-    content: "";
-    position: absolute;
-    width: 80px;
-    height: 100%;
-    z-index: 1;
-    background: #113649;
-    transform: translateX(-170px) skewX(30deg);
-    transition: 0.85s ease-in-out;
+.morebtn span i {
+    transition: transform 0.3s ease;
 }
 
-.morebtn:hover:after{
-    transform: translateX(170px) skewX(30deg);
+.morebtn:hover span i {
+    transform: translateX(5px);
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .title h2 {
+        font-size: 2rem;
+    }
+    .card h4 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .title h2 {
+        font-size: 1.8rem;
+    }
+    .card h4 {
+        font-size: 1rem;
+    }
+}
+
+
+
+/*.project-section .title{*/
+/*    top: 30px;*/
+/*    margin-bottom: 40px;*/
+/*    font-size: 40px;*/
+/*    font-weight: 500;*/
+/*}*/
+
+/*.project-section .cards{*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*    align-items: center;*/
+/*    position: relative;*/
+/*    justify-content: center;*/
+/*    justify-items: center;*/
+/*    align-content: center;*/
+/*    !*width:auto;*!*/
+/*    gap: 10rem;*/
+/*    overflow: hidden;*/
+/*    min-height: 100vh;*/
+/*    flex-wrap: wrap;*/
+/*    width: 100%;*/
+/*    margin-bottom: 60px;*/
+
+
+/*}*/
+
+
+/*.project-section .card{*/
+/*    !*margin-right: 50px;*!*/
+/*    background: transparent;*/
+/*    min-height: 200px;*/
+/*    border-radius: 4px;*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    align-items: center;*/
+/*    border-color: dodgerblue;*/
+/*    border-width:6px 3px 6px 3px;*/
+/*    border-style: solid;*/
+/*    width: 150px;*/
+/*    position: relative;*/
+/*    cursor: pointer;*/
+/*    margin-bottom: 10px;*/
+/*}*/
+
+/*.project-section button{*/
+/*    background: transparent;*/
+/*    position: absolute;*/
+/*    top: 20px;*/
+/*    width: 60px;*/
+/*    left: 0;*/
+/*    right: 0;*/
+/*    bottom: 0;*/
+/*    margin: auto;*/
+/*    aspect-ratio: 1/1;*/
+/*    border-radius: 100%;*/
+/*}*/
+
+/*.project-section button:hover{*/
+/*    background: #56eaef;*/
+/*    color: #021925;*/
+/*}*/
+
+
+/*.project-section i{*/
+/*    font-size: 60px;*/
+/*    color: #387bc9;*/
+/*}*/
+
+/*.project-section .morebtn{*/
+/*    position: absolute;*/
+/*    bottom: 50px;*/
+/*    right: 40px;*/
+/*    min-width: 200px;*/
+/*    !*width: 200px;*!*/
+/*    !*margin-right: 300px;*!*/
+/*    height:60px;*/
+/*    background: #021925;*/
+/*    border-radius: 60PX;*/
+/*    display: flex;*/
+/*    justify-content:center ;*/
+/*    align-items: center;*/
+/*    color:white;*/
+/*    text-decoration: none;*/
+/*    letter-spacing: 2px;*/
+/*    border-top:0.6px solid #073750;*/
+/*    border-left:0.6px solid #073750;*/
+/*    border-bottom:0.1px solid #073750;*/
+/*    border-right:0.1px solid #073750;*/
+/*    padding-left: 40px;*/
+/*    transition: 0.5s;*/
+/*    overflow: hidden;*/
+/*}*/
+
+/*.project-section .morebtn:hover{*/
+/*    padding-left:0 ;*/
+/*    padding-right: 40px;*/
+/*    color: #56eaef;*/
+/*}*/
+
+/*.morebtn span{*/
+/*    position: absolute;*/
+/*    left: 5px;*/
+/*    width: 50px;*/
+/*    height: 50px;*/
+/*    background: #387bc9;*/
+/*    border-radius: 50%;*/
+/*    transition: 0.5s ease-in-out;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    color: black;*/
+/*    font-size: 1.5em;*/
+/*}*/
+
+/*.morebtn i{*/
+/*    font-size: 30px;*/
+/*    color: black;*/
+/*}*/
+
+/*.morebtn:hover span{*/
+/*    left: calc(100% - 55px);*/
+/*    background: #56eaef;*/
+/*}*/
+
+/*.morebtn:after{*/
+/*    content: "";*/
+/*    position: absolute;*/
+/*    width: 80px;*/
+/*    height: 100%;*/
+/*    z-index: 1;*/
+/*    background: #113649;*/
+/*    transform: translateX(-170px) skewX(30deg);*/
+/*    transition: 0.85s ease-in-out;*/
+/*}*/
+
+/*.morebtn:hover:after{*/
+/*    transform: translateX(170px) skewX(30deg);*/
+/*}*/
 
 .skills-section{
+    max-width: 100%;
     background: #003244;
    height: auto;
     display: flex;
     flex-direction: column;
-    min-height: 230vh;
     padding: 8% 0 0 10%;
     letter-spacing: normal;
+    width: auto;
+}
+
+.skills-section .title{
     max-width: 100%;
     width: auto;
-    margin-bottom: -400px;
+    margin:10px auto 50px 1px;
 }
 
 .skills-section #Skills{
-    margin-bottom: 40px;
+    font-family: 'Montserrat', sans-serif;
     font-size: 40px;
     font-weight: 500;
 
@@ -707,60 +841,134 @@ font-style: normal;
     font-size: 18px;
     letter-spacing: .4px;
     line-height: 40px;
+    margin-bottom: 60px;
 }
 
-.skillSub-content1{
-    position: relative;
-    text-align: center;
-    top: 80px;
-}
-
-.skillSub-content1 .sub-title{
-    color: dodgerblue;
-    font-size: 20px;
-    font-weight: 200;
-    margin-bottom: 80px;
-}
-
-.skillSub-content{
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    align-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 200px;
-    height: auto;
-    width: auto;
-}
-
-.skillSub-content div{
-    display: flex;
-    align-items: center;
+/* Skill Section Styling */
+.skillSub-content1 {
+    padding: 40px 20px;
     background-color: #003244;
-    border-radius: 20px; /* Rounded rectangle shape */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add some shadow */
-    transition: transform 0.3s ease-in-out;
-        width: 150px;
-    /*position: relative;*/
-    /*left: 50px;*/
-    margin-right: 100px;
     text-align: center;
-    margin-bottom: 70px;
 }
 
+.sub-title h3 {
+    font-size: 1.8rem;
+    color: #56eaef;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+/* Skill Content Grid */
+.skillSub-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); /* Responsive grid */
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+}
+
+.skillSub-content div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px; /* Set a fixed width */
+    height: 80px; /* Set a fixed height */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skillSub-content img {
+    max-width: 50px;
+    height: auto;
+    border-radius: 10%;
+    transition: transform 0.3s ease;
+}
+
+/* Hover Effect */
 .skillSub-content div:hover {
-    transform: scale(1.1); /* Hover effect for interactivity */
+    transform: scale(1.1);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
 }
-.skillSub-content img{
-    width: 30px;
-    border-radius: 50%; /* Make the images circular */
-    border: 2px solid #ddd;
-    margin-right: 4px;
-    margin-bottom: 10px;
-    object-fit: cover;
+
+/* Responsive Design for Section */
+@media (max-width: 768px) {
+    .sub-title h3 {
+        font-size: 1.5rem;
+    }
+    .skillSub-content img {
+        max-width: 40px;
+    }
+    .skillSub-content div {
+        width: 60px; /* Adjust for mobile view */
+        height: 60px;
+    }
 }
+
+@media (max-width: 480px) {
+    .sub-title h3 {
+        font-size: 1.3rem;
+    }
+    .skillSub-content {
+        gap: 15px;
+    }
+    .skillSub-content div {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+
+/*.skillSub-content1{*/
+/*    position: relative;*/
+/*    text-align: center;*/
+/*    top: 80px;*/
+/*}*/
+
+/*.skillSub-content1 .sub-title{*/
+/*    color: dodgerblue;*/
+/*    font-size: 20px;*/
+/*    font-weight: 200;*/
+/*    margin-bottom: 80px;*/
+/*}*/
+
+/*.skillSub-content{*/
+/*    position: relative;*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*    align-content: space-around;*/
+/*    align-items: center;*/
+/*    flex-wrap: wrap;*/
+/*    justify-content: center;*/
+/*    margin-bottom: 200px;*/
+/*    height: auto;*/
+/*    width: auto;*/
+/*}*/
+
+/*.skillSub-content div{*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    background-color: #003244;*/
+/*    border-radius: 20px; !* Rounded rectangle shape *!*/
+/*    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); !* Add some shadow *!*/
+/*    transition: transform 0.3s ease-in-out;*/
+/*        width: 150px;*/
+/*    !*position: relative;*!*/
+/*    !*left: 50px;*!*/
+/*    margin-right: 100px;*/
+/*    text-align: center;*/
+/*    margin-bottom: 70px;*/
+/*}*/
+
+/*.skillSub-content div:hover {*/
+/*    transform: scale(1.1); !* Hover effect for interactivity *!*/
+/*}*/
+/*.skillSub-content img{*/
+/*    width: 30px;*/
+/*    border-radius: 50%; !* Make the images circular *!*/
+/*    border: 2px solid #ddd;*/
+/*    margin-right: 4px;*/
+/*    margin-bottom: 10px;*/
+/*    object-fit: cover;*/
+/*}*/
 
 .education-section{
     position: relative;
@@ -913,13 +1121,15 @@ font-style: normal;
 
 .cards-services .scards{
     position: relative;
-    max-width: 300px;
+    max-width: 240px;
     width: auto;
-    min-height: 50vh;
     height: auto;
     border-radius:10px;
     border-color: dodgerblue;
     border-width: 10px 3px 10px 3px;
+    padding: 5px;
+    min-height: 40vh;
+    box-shadow: 0 5px 9px 0 rgb(86, 234, 239);
     border-style: solid;
     text-align: center;
     margin-bottom: 30px;
@@ -968,7 +1178,6 @@ font-style: normal;
 
 
 .Gallery-section .photos {
-
     position: relative;
     top: 100px;
     display: flex;
@@ -984,6 +1193,8 @@ font-style: normal;
 
 
 .Gallery-section .photos img{
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 300px;
     border: #081b29 solid 2px;
 }
@@ -999,7 +1210,6 @@ font-style: normal;
     padding: 8% 8% 0 10%;
     background: #003244;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
     margin: 0 auto;
 }
 
