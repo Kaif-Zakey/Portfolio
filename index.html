@@ -37,11 +37,11 @@
     <nav>
         <ul class="navigation">
             <li><a href="#home-nav">Home</a></li>
-            <li><a href="#education-nav">Education</a></li>
             <li><a href="#About-nav">About</a></li>
             <li><a href="#project-nav">Projects</a></li>
-            <li><a href="#service-nav">Service</a></li>
             <li><a href="#skill-nav">Skills</a></li>
+            <li><a href="#education-nav">Education</a></li>
+            <li><a href="#service-nav">Service</a></li>
             <li><a href="#gallery-nav">Gallery</a></li>
             <li><a href="#contact-nav">Contacts</a></li>
         </ul>
@@ -55,7 +55,7 @@
     <!--Hero or Intro Section-->
     <section class="Home" id="home-nav">
         <div class="hContent">
-            <span class="image"><img src="./Assets/photos/my%20image.png" alt=""></span>
+            <span class="image"><img src="./Assets/photos/my%20image.png" alt="zaki" title="Kaif Zaki"></span>
 
             <h1 data-aos="zoom-in-right"> Hi I'm Kaif Zaki</h1>
 
@@ -190,12 +190,11 @@
                     My problem-solving abilities and analytical mindset allow me to tackle complex issues
                     head-on and devise innovative solutions tailored to specific needs
                 </li>
-                <br>
+
                 <li>
                     I am well-versed in Agile and Scrum methodologies,which enable me to manage projects
                     effectively and deliver high-quality software within tight deadlines.
                 </li>
-                <br>
                 <li>
 
                     I have extensive experience in designing and managing databases
@@ -214,36 +213,36 @@
 
             <div class="skillSub-content">
                 <div>
-                    <img data-aos="fade-right" src="Assets/icon/figma.png" alt="figma" height="40px">
+                    <img data-aos="fade-right" src="Assets/icon/figma.png" alt="figma" >
                 </div>
                 <div>
-                    <img data-aos="fade-right" src="Assets/icon/html.png" alt="html" height="40px">
+                    <img data-aos="fade-right" src="Assets/icon/html.png" alt="html">
                 </div>
                 <div>
-                    <img data-aos="fade-left" src="Assets/icon/java.png" alt="java" height="40px">
+                    <img data-aos="fade-left" src="Assets/icon/java.png" alt="java">
                 </div>
                 <div>
-                    <img  data-aos="fade-right" src="Assets/icon/social%20(1).png" alt="css" height="40px">
+                    <img  data-aos="fade-right" src="Assets/icon/social%20(1).png" alt="css">
                 </div>
                 <div>
-                    <img data-aos="fade-left" src="Assets/icon/git.png" alt="git" height="40px">
+                    <img data-aos="fade-left" src="Assets/icon/git.png" alt="git" >
                 </div>
                 <div>
-                    <img data-aos="fade-right" src="./Assets/icon/programing.png" alt="MySQL" height="40px">
-                </div>
-
-                <div>
-                    <img data-aos="fade-left" src="./Assets/icon/atom.png" alt="React" height="40px">
+                    <img data-aos="fade-right" src="./Assets/icon/programing.png" alt="MySQL" >
                 </div>
 
                 <div>
-                    <img data-aos="fade-right" src="./Assets/icon/server.png" alt="MongoDb" height="40px">
+                    <img data-aos="fade-left" src="./Assets/icon/atom.png" alt="React" >
+                </div>
+
+                <div>
+                    <img data-aos="fade-right" src="./Assets/icon/server.png" alt="MongoDb">
                 </div>
                 <div>
-                    <img data-aos="fade-left" src="./Assets/icon/nodejs.png" alt="Node.js" height="40px">
+                    <img data-aos="fade-left" src="./Assets/icon/nodejs.png" alt="Node.js">
                 </div>
                 <div>
-                    <img data-aos="fade-right" src="./Assets/icon/js.png" alt="javaScript" height="40px">
+                    <img data-aos="fade-right" src="./Assets/icon/js.png" alt="javaScript">
                 </div>
 
             </div>
@@ -360,13 +359,13 @@
             <div class="contact-links">
                 <div id="MailLink">
                     <a href="mailto:kaifzakey22@gmail.com">
-                        <img src="Assets/icon/mail.png" alt="click to mail" title="Click to mail" height="30px"> <p>kaifzakey22@gmail.com</p>
+                        <img src="Assets/icon/mail.png" alt="click to mail" title="Click to mail" > <p>kaifzakey22@gmail.com</p>
                     </a>
                 </div>
 
                 <div>
                     <a href="tel:0776737532">
-                        <img src="Assets/icon/telephone.png" alt="click to call" height="30px"> <p>0776737532</p>
+                        <img src="Assets/icon/telephone.png" alt="click to call" > <p>0776737532</p>
                     </a>
                 </div>
 
@@ -375,10 +374,13 @@
 
             <div class="ContactForm">
                 <form>
+                    <label for="yourName">Name</label>
                     <input  type="text" placeholder="YourName" id="yourName" required >
                     <br>
-                    <input type="email" placeholder="Your Mail" required>
+                    <label for="yourMail">Mail</label>
+                    <input type="email" id="yourMail" placeholder="Your Mail" required>
                     <br>
+                    <label for="message">Message</label>
                     <textarea name="message" id="message" cols="30" rows="5" placeholder="Your message " required></textarea>
                     <br>
                     <button type="submit">Submit</button>

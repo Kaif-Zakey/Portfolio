@@ -62,7 +62,6 @@ header {
     0% {
         scale: 70%;
         opacity: .2;
-        transform: translateY(-20px);
         color: rgba(110, 175, 251, 1);
     }
     100% {
@@ -105,7 +104,7 @@ header {
     display: flex;
     align-items: center;
     padding: 0 10%;
-    width: 100%;
+    max-width: 100%;
     background: #021925;
 
 }
@@ -570,7 +569,7 @@ font-style: normal;
     height: 200px;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
@@ -580,7 +579,7 @@ font-style: normal;
 
 .card:hover {
     transform: translateY(-10px);
-    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
 .card h4 {
@@ -886,7 +885,7 @@ font-style: normal;
 /* Hover Effect */
 .skillSub-content div:hover {
     transform: scale(1.1);
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
 }
 
 /* Responsive Design for Section */
@@ -1112,7 +1111,7 @@ font-style: normal;
     justify-content: center;
     overflow: hidden;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 80px;
 }
 
 
@@ -1129,7 +1128,7 @@ font-style: normal;
     border-width: 10px 3px 10px 3px;
     padding: 5px;
     min-height: 40vh;
-    box-shadow: 0 5px 9px 0 rgb(86, 234, 239);
+    box-shadow: 0 5px 9px 0 rgba(22, 26, 26, 0.34);
     border-style: solid;
     text-align: center;
     margin-bottom: 30px;
