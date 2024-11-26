@@ -455,28 +455,31 @@ font-style: normal;
     }
 }
 
-@media (max-width: 480px) {
-   .About-section h1 {
-        font-size: 2rem;
-    }
 
-    .profile-photo img {
-        width: 100px;
-        height: 150px;
-    }
 
-    .details p {
-        font-size: 0.9rem;
-    }
 
-    .mission h2, .vision h2 {
-        font-size: 1.3rem;
-    }
+/*@media (max-width: 480px) {*/
+/*   .About-section h1 {*/
+/*        font-size: 2rem;*/
+/*    }*/
 
-    .mission p, .vision p {
-        font-size: 1rem;
-    }
-}
+/*    .profile-photo img {*/
+/*        width: 100px;*/
+/*        aspect-ratio: auto*/
+/*    }*/
+
+/*    .details p {*/
+/*        font-size: 0.9rem;*/
+/*    }*/
+
+/*    .mission h2, .vision h2 {*/
+/*        font-size: 1.3rem;*/
+/*    }*/
+
+/*    .mission p, .vision p {*/
+/*        font-size: 1rem;*/
+/*    }*/
+/*}*/
 
 
 
@@ -661,14 +664,14 @@ font-style: normal;
     }
 }
 
-@media (max-width: 480px) {
-    .title h2 {
-        font-size: 1.8rem;
-    }
-    .card h4 {
-        font-size: 1rem;
-    }
-}
+/*@media (max-width: 480px) {*/
+/*    .title h2 {*/
+/*        font-size: 1.8rem;*/
+/*    }*/
+/*    .card h4 {*/
+/*        font-size: 1rem;*/
+/*    }*/
+/*}*/
 
 
 
